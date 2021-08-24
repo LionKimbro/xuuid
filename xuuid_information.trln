@@ -1,0 +1,1396 @@
+{
+   "formats": [
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            }
+         ],
+         "formatname": "DEFAULT",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "SupportURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Fat_Info",
+         "icon": "note",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Question",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Research",
+               "fieldtype": "SpacedText",
+               "lines": 20
+            },
+            {
+               "fieldname": "Answer",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "URL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "HomeURL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "DocURL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "WikipediaURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Fat_Question",
+         "icon": "question",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Author",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Description",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "URL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "HomeURL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "WikipediaURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Inquiry_Definition",
+         "icon": "book_3",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Contact",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "EmailAddress",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "PhoneNumber",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Description",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Log",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "HomeURL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "WikipediaURL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "RepoURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Inquiry_Project",
+         "icon": "home",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Author",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Quotation",
+               "fieldtype": "SpacedText",
+               "lines": 7
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "SourceURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Inquiry_Quotation",
+         "icon": "smiley_5",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Author*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "URL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "Description",
+               "fieldtype": "SpacedText",
+               "lines": 6
+            }
+         ],
+         "formatname": "Research_Link",
+         "icon": "bookmark",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            }
+         ],
+         "formatname": "Todo_Flag",
+         "icon": "sphere",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*}"
+      }
+   ],
+   "nodes": [
+      {
+         "children": [
+            "d0899ad7038711ec91d160a44c24df47",
+            "49673e21038911ec9e3460a44c24df47",
+            "bf5cc292038911ecabcf60a44c24df47",
+            "400af42b038911ecabe160a44c24df47",
+            "75089bf1038911ec9e0e60a44c24df47",
+            "ff2cb8f3038a11ecbf7b60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 13:03:29.648638",
+            "Hook": "uniqueness, ...",
+            "Name": "What qualities might we looking for in a GUUID system?",
+            "Question": "What qualities are we looking for in a universally unique identifier, generally (in a GUUID: general universally unique identifier)?"
+         },
+         "format": "Fat_Question",
+         "uid": "0505f7f1038411ec99b760a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:29:15.681195",
+            "Hook": "3 Basic Points",
+            "Name": "Basic Strategy",
+            "Notes": "The basic idea of XUUIDs is as follows:\n\n1. Make absolutely enormous identifiers.\n2. Make them human readable.\n3. With tools, make them short, and human readable, for local context.\n\nOn the next page, I'll show you an example of an enormous, but human readable identifier."
+         },
+         "format": "Fat_Info",
+         "uid": "0e6f78b403d311eca2ea60a44c24df47"
+      },
+      {
+         "children": [
+            "b1ef84d0043411ecb11660a44c24df47"
+         ],
+         "data": {
+            "Name": "XUUID tooling"
+         },
+         "format": "DEFAULT",
+         "uid": "1436a58b043411ecb6c160a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Leo Dirac",
+            "Created": "2021-08-22 11:09:24.161223",
+            "Hook": "calculates a collision after 10 years in a massively GUID-generating world",
+            "Notes": "It does strike me as plausible that there could come a day in our technological future in which the trail behind people and machines generates roughly one GUID per second per human being on the planet.  I speculate that the bulk of this data would come from machines that automatically monitor human life.",
+            "Quotation": "\"\"\"\nIf every person on the planet generates a new UUID4 every second, we\u2019d expect a collision to occur after about 10 years.\n\nUUID4 is the commonly-used variant of the UUID spec that uses randomly generated numbers to choose the UUID instead of information about the generating machine or what have you. UUID4\u2019s leave 122 of the 128 bits available for random data, which by the birthday paradox means we should expect a collision after about 2^(122/2) have been generated. That\u2019s 10^18.4 about. The earth has about 10^9.9 people in it, and a year has almost exactly 10^7.5 seconds in it.\n\n9.9+7.5 = 17.4\n\n10^(18.4\u201317.4) = 10\n\nSo about 10 years.\n\nIt\u2019s extremely unlikely there have been any collisions for properly generated UUID\u2019s so far. (But buggy code has certainly generated collisions.) However, as we look to the not-so-distant future where everybody is generating data all the time, it\u2019s clear we\u2019re going to need more than 128 bits for our UUID space.\n\"\"\"",
+            "SourceURL": "https://www.quora.com/Has-there-ever-been-a-UUID-collision/answer/Leo-Dirac"
+         },
+         "format": "Inquiry_Quotation",
+         "uid": "14cb7bcc037411ecb1e760a44c24df47"
+      },
+      {
+         "children": [
+            "1f573cc4037111ec86bf60a44c24df47"
+         ],
+         "data": {
+            "Name": "Library"
+         },
+         "format": "DEFAULT",
+         "uid": "179c5300037111ecb09560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:15:15.928113",
+            "Hook": "identifiers are easily KiB long",
+            "Name": "It's Very Long",
+            "Notes": "Consider *just* the hard data for this identifier:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\nThat's on the order of 150, 160 characters long.\n\nIncluding soft data like public keys, AKAs, sourcing URLs, recommended naming, and perhaps local data as well, this could easily stretch to 1KiB."
+         },
+         "format": "Fat_Info",
+         "uid": "19e751f203d111ecbd9160a44c24df47"
+      },
+      {
+         "children": [
+            "2f5759d603ca11ec983c60a44c24df47",
+            "7182e90903ca11ecae2060a44c24df47",
+            "bcfb4bfe03cd11ecb2f660a44c24df47",
+            "d366d7f803cd11ec959e60a44c24df47",
+            "d692578403d511ec968460a44c24df47",
+            "e5ee325703d511ec905060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 21:25:13.905630",
+            "Hook": "auxiliary data that supports an XUUID",
+            "Name": "Soft Data",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "1c8f0ab203ca11eca1cc60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 13:31:37.974706",
+            "Name": "How MIME multi-part works",
+            "Notes": "Multi-part version and type information:\n  MIME-Version: 1.0\n\nEach section has a type and a boundary specification.\nThey can also have a content type encoding spec.\n  Content-Type: application/octet-stream\n  Content-Transfer-Encoding: base64",
+            "SupportURL": "https://en.wikipedia.org/wiki/MIME#Multipart_messages"
+         },
+         "format": "Fat_Info",
+         "uid": "1dc1d4fb045111ec81e360a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:32:49.146720",
+            "Name": "What domains need what kind of guarantee?",
+            "Question": "What domains need what kind of guarantee?"
+         },
+         "format": "Fat_Question",
+         "uid": "1dc411c4038811ecbcf960a44c24df47"
+      },
+      {
+         "children": [
+            "8d8efb24037211ecaa6560a44c24df47",
+            "ca186f1803d411ecb60960a44c24df47",
+            "85c06b89037211eca4fe60a44c24df47"
+         ],
+         "data": {
+            "Name": "Terminology"
+         },
+         "format": "DEFAULT",
+         "uid": "1f573cc4037111ec86bf60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:29:46.857867",
+            "Hook": "using an identifier for myself as an example",
+            "Name": "An Example XUUID",
+            "Notes": "Here's an example of an XUUID, that I can imagine:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\nThis identifier is roughly 150-160 bytes long -- much longer than the 16 bytes of a UUID.\nYou can see that, while there is random information (and here, an entire v4 UUID) inside the XUUID, the likelihood of a collision is pretty much zero.\n\nYou can also see that the XUUID is human readable and descriptive.  You can tell that this is a person, you can tell that that person is me, you can see my date of birth here, and you can see my birthplace as well.\n\nNow this \"human readability\" of personal information brings up the subject of privacy, which we'll talk about next."
+         },
+         "format": "Fat_Info",
+         "uid": "2104a77103d311ec8b0b60a44c24df47"
+      },
+      {
+         "children": [
+            "dfe6c3dd044511ec8e1360a44c24df47",
+            "f5fbd857044511ecb5f560a44c24df47",
+            "d34ca269044511ec8d4860a44c24df47"
+         ],
+         "data": {
+            "Name": "XUUID communications &amp; storage specifications"
+         },
+         "format": "DEFAULT",
+         "uid": "226b0abd043411ec9cc660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:33:04.978960",
+            "Name": "What historical collisions have there been?",
+            "Question": "What historical collisions have there been?"
+         },
+         "format": "Fat_Question",
+         "uid": "2733b997038811eca52a60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 22:44:22.673924",
+            "Description": "If you have the \"hard data\" for an identifier, you have everything you absolutely need to be able to recognize and use the identifier.",
+            "Hook": "data the completely identifies an XUUID",
+            "Name": "hard data",
+            "Notes": "Hard data is contrasted with \"soft data\" and \"local data\", which provide auxiliar information about the identifier."
+         },
+         "format": "Inquiry_Definition",
+         "uid": "2b0b942903d511ecb6c560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:33:14.000000",
+            "Name": "Is \"good enough\" ok?",
+            "Question": "If software is \"generally good enough,\" but under unusual circumstances produces collisions, does that warrant revisiting the system as a whole?"
+         },
+         "format": "Fat_Question",
+         "uid": "2d0d851b038811eca15a60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:25:45.417365",
+            "Hook": "how you know that this data is authentic",
+            "Name": "Authentication",
+            "Notes": "ex: supplying a signature for data (hard or soft or attached) associated with the identifier, to guarantee authenticity"
+         },
+         "format": "Fat_Info",
+         "uid": "2f5759d603ca11ec983c60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Kalid Azad (The Quick Guide to GUIDs)",
+            "Created": "2021-08-22 11:03:07.220347",
+            "Hook": "\"collisions are still possible\"",
+            "Quotation": "\"\"\"\nGUIDs are not a GUARantee\nThere\u2019s one giant caveat for GUIDs: collisions are still possible.\n\nFirst, the birthday paradox shows us the chance of a collision as GUIDs are used. It\u2019s very, very unlikely that GUIDs will collide, but as more are assigned, there are fewer left to choose from.\n\"\"\"",
+            "SourceURL": "https://betterexplained.com/articles/the-quick-guide-to-guids/"
+         },
+         "format": "Inquiry_Quotation",
+         "uid": "341eded5037311ecbb8f60a44c24df47"
+      },
+      {
+         "children": [
+            "39ea10a403d411eca01060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 22:30:19.569731",
+            "Hook": "XUUIDs are potentially dangerous, and this must be understood",
+            "Name": "An Aside About Privacy",
+            "Notes": "This brings up the important topic of privacy:  There are notes about privacy and unwitting exposure in \"Concerns with XUUID,\" which should be read and understood and thought about.\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\nLike I said before -- you can see my name, date of birth, and birthplace here.  I'm okay with that information being exposed, but there are a lot of people for whom that exposure could be very dangerous, and everybody needs to know what is being exposed, so that they can decide whether to expose it or not.\n\nNote however that while this data is convenient for explaining how this system could work, it's not necessary for the system that this specific information is shared.\n\nFor example, this could also be used to identify a person:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"USERNAME\": \"ultraman\",\n   \"HOST\": \"The Armory\",\n   \"LOCATION\": [XUUID:] \"GEEKHOUSE.THEARMORY\",\n   \"RANDOM\": \"ca5f43b0-65ac-444d-b84d-adb809278649\"}\n\nOr even just this:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"RANDOM\": \"55cdc801-8b40-467f-a7ac-0aede3c2f83e\"}\n\nThis identifier essentially just says, \"There is a person, and we're calling that person 55cdc801-8b40-467f-a7ac-0aede3c2f83e, ...\"\n\nThere are other privacy concerns to think about -- spend time reading the concerns \"Privacy Leaks\", \"Unwitting Exposure\", and \"Automated Inference\" within the \"Concerns with XUUID\" section.\n\nOK -- the following section is about what those \"XUUID\" tags mean, and about tooling support for short names."
+         },
+         "format": "Fat_Info",
+         "uid": "348416a103d311ec8ef860a44c24df47"
+      },
+      {
+         "children": [
+            "341eded5037311ecbb8f60a44c24df47",
+            "14cb7bcc037411ecb1e760a44c24df47",
+            "cdce040f037611ec88b960a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 13:04:50.016746",
+            "Hook": "Are GUIDs Unique?",
+            "Name": "GUID Uniqueness",
+            "Question": "Are GUIDs Unique?",
+            "Research": "When I do now a quick search on Google for, \"are guids unique\", I find several articles questioning the uniqueness of GUID collision.\n\nArguments that collisions are likely:\n* there are several anecdotes on the Internet of collisions happening; it is counter-argued that software assigning GUIDs is not following proper randomization procedure, but I think it is still notable and worthy of reflection as a problem\n* Things in computers and records seem to pile up.  All 4 billion IPv4 addresses have been assigned, because (A) the population of the world is over 4 billion, and (B) people keep numerous personal computing devices, not even including business computing devices.  I don't know when they expected IPv4 to run out, but it did, and fairly quickly.  It does plausible to me that 1 GUID would be used per person per second, and within just a few decades.\n\nArguments that collisions are unlikely:\n* collisions require actual colliding -- if two GUIDs happen by chance to be the same, but are used in completely different domains, it is unlikely that they will ever encoutner one another in practice.  For example, the GUID may simultaneously refer to a moment in time in the middle of a video, and also identify a printer driver.  You're never going to practically try and jump to the printer driver while navigating a video, and you're never going to try to install a moment in time in a video as a printing device.\n\n"
+         },
+         "format": "Fat_Question",
+         "uid": "34ed2b2a038411ec80f460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:26:44.494026",
+            "Hook": "local-only data associated with the identifier",
+            "Name": "Local Data",
+            "Notes": "Local-only data refers to data about the XUUID identifier, but that is limited in scope to the present machine.  It is information that is NOT intended for use beyond the present machine.\n\nAn example might be the locally assigned information about an identifier.\n\nIf an identifier comes in and recommends naming of \"A\", and there is already a local \"A\", then the local name of \"A2\" might be assigned to the XUUID.  That value of \"A2\" is really intended for a local fit, and isn't intended for remote contexts.\n\nThere may be other notes about the identifier that are only intended for local storage.  They can all be considered \"local data\" storage for the idetnifier.\n\nLocal-only data, as a general rule, should NOT be shipped with a data export.\n\nThe only exception I can think of is an imprint of data being exported, that is using some local names itself.  The naming assignments for the data export will likely be equivalent to the naming used locally on the computer, since it's guaranteed to have a unique local name for everything exported.\n\nHowever, those local names will likely be replaced on a receiving machine (as they are designed to be replaced,) and so there's no real problem here."
+         },
+         "format": "Fat_Info",
+         "uid": "377993ea051111eca8e860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 13:19:13.553803",
+            "Description": "This is the name of an identifier I have invented for this project.  \"X\" can be interpreted as \"Experimental,\" \"Extensive,\" or \"Extended.\"",
+            "Hook": "Extended Universally Unique Identifier",
+            "Name": "XUUID",
+            "Notes": "An example of an XUUID looks like:\n\n  {\"Type\": {... Person Type Identifier ...},\n   \"Birthname\": \"David Rushton Brock Kimbro\",\n   \"Birthdate\": \"1977-08-29\",\n   \"Birthplace\": {... Identifier for Monterey, California ...},\n   \"RANDOM\": \"94PXNMQ231DN8PE\"}\n\nNote that it could also look like:\n\n  {\"Type\": {... Person Type Identifier ...},\n   \"Alias\": \"The Mac\",\n   \"Whereabouts\": \"Seattle, WA\",\n   \"RANDOM\": \"FX9D5KGTM6EEDWV\"}\n\nIt's called \"Extended\" or \"Extensive,\" because it is not only random -- it includes descriptive information as well."
+         },
+         "format": "Inquiry_Definition",
+         "uid": "37a27774038611ec839f60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 22:44:46.761808",
+            "Description": "Soft data provides auxiliary information about an identifier: authentication keys associated with it, sourcing information (where to locate additional information about the identifer,) \"AKA\"s (other identifiers that are asserted to be equivalent to the hard identifier,) recommended naming hints, and additional information about the thing identified by the hard data.",
+            "Hook": "auxiliary data that supports an XUUID",
+            "Name": "soft data"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "3967192103d511ecbb0160a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:36:42.075957",
+            "Name": "CHECK: currency of Concerns with XUUID section",
+            "Notes": "Near the end of \"An Aside About Privacy,\" there's reference to the Concerns with XUUID sections on privacy.  Check that these are still current, in the future."
+         },
+         "format": "Todo_Flag",
+         "uid": "39ea10a403d411eca01060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-24 12:34:03.945940",
+            "Description": "",
+            "Hook": "data that comes with the identifiers, but that isn't about the identifiers",
+            "Name": "bundled data"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "3d689e4c051211ecb5fb60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:13:00.000000",
+            "Name": "TO WRITE",
+            "Notes": "I need to write further about this."
+         },
+         "format": "Todo_Flag",
+         "uid": "3f7c26bc050f11ecba7460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:40:56.150532",
+            "Hook": "tools exist that support use of the identifiers",
+            "Name": "Supported",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "400af42b038911ecabe160a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 22:45:01.505440",
+            "Hook": "local-use data associated with the XUUID identifiers",
+            "Name": "local data"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "4230cc4503d511ecb57960a44c24df47"
+      },
+      {
+         "children": [
+            "5245e769039811ec861260a44c24df47",
+            "62ae2bfc039811ec981160a44c24df47",
+            "9941aa4e03cf11ecaaa460a44c24df47"
+         ],
+         "data": {
+            "Name": "XUUID ideas"
+         },
+         "format": "DEFAULT",
+         "uid": "466ffeab039811ec99ec60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:41:11.854851",
+            "Hook": "identifiers where you can tell something of what it is, from the identifier",
+            "Name": "Suggestive, Descriptive",
+            "Notes": "For example, an identifier like \"Fred\" suggests to us, \"This is the name of a person,\" whereas a name like \"SN39584\" suggests to us \"This is a serial number,\" perhaps of a part or product number.\n\nMy name (my identifier) is \"Lion Kimbro\", and even if people don't know me or that there is somebody named \"Lion,\" they can probably guess that this is likely the name of a male person.\n\nIn contrast, a GUID only tells us that it is an identifier manufactured by a computer, and otherwise, we have to guess what is described."
+         },
+         "format": "Fat_Info",
+         "uid": "49673e21038911ec9e3460a44c24df47"
+      },
+      {
+         "children": [
+            "2b0b942903d511ecb6c560a44c24df47",
+            "4230cc4503d511ecb57960a44c24df47",
+            "3967192103d511ecbb0160a44c24df47",
+            "3d689e4c051211ecb5fb60a44c24df47"
+         ],
+         "data": {
+            "Name": "types of data"
+         },
+         "format": "DEFAULT",
+         "uid": "4e53716c03d511eca3f360a44c24df47"
+      },
+      {
+         "children": [
+            "0e6f78b403d311eca2ea60a44c24df47",
+            "2104a77103d311ec8b0b60a44c24df47",
+            "348416a103d311ec8ef860a44c24df47",
+            "66a1ff2403d411eca6ed60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 15:29:00.346812",
+            "Hook": "basic ideas",
+            "Name": "Introducing XUUIDs (Extended Universally Unique Identifiers)",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "5245e769039811ec861260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 10:05:59.502918",
+            "Hook": "including XUUID data annotations in NLSD files",
+            "Name": "XUUIDs in NLSD",
+            "Notes": "In NLSD documents, XUUIDS are embedded with source data, and identifiers are called out for patching."
+         },
+         "format": "Fat_Info",
+         "uid": "5f274c52043411ec80a360a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 10:13:03.858536",
+            "Name": "How will JSON data distinguish between a value and a short name for an identifier?"
+         },
+         "format": "Fat_Question",
+         "uid": "6063fa12043511ec840860a44c24df47"
+      },
+      {
+         "children": [
+            "6b0087f0039811ec8e3e60a44c24df47",
+            "1c8f0ab203ca11eca1cc60a44c24df47",
+            "377993ea051111eca8e860a44c24df47",
+            "ae81e4f703ca11ecaad860a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 15:29:16.713676",
+            "Hook": "elements of an XUUID",
+            "Name": "XUUID"
+         },
+         "format": "Fat_Info",
+         "uid": "62ae2bfc039811ec981160a44c24df47"
+      },
+      {
+         "children": [
+            "848da2f9050f11ec8ec060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-24 12:13:39.132130",
+            "Hook": "the time that the identifier was created",
+            "Name": "Time of Creation",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "635cdcd6050f11ec918660a44c24df47"
+      },
+      {
+         "children": [
+            "3f7c26bc050f11ecba7460a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 21:34:25.838232",
+            "Hook": "descriptive and (most likely) unchanging information about the thing identified",
+            "Name": "Identifying Information"
+         },
+         "format": "Fat_Info",
+         "uid": "65891ef303cb11ec894160a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:38:53.148547",
+            "Hook": "XUUID tooling so that you're using short identifiers",
+            "Name": "Short Names",
+            "Notes": "\nLet's look back at an identifier for myself:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\nWhat's that \"XUUID:\" there?  It's a piece (in a made-up language) that says \"The following thing is an XUUID.\"\n\nThe idea is that the interpreter looks at \"TYPE.PERSON\" and thinks, \"That's not a string value, -- that's a reference to another XUUID.\"\n\n\"TYPE.PERSON\" is a shortname.\n\nNow, you may notice these \"XUUID:\" type indicators.  That means that the data here is not a value, but rather, a short-name.  The short-name is resolved via tooling: the XUUID concept here is not just about the shape of identifiers, but is also about support tooling, and specifically tooling \n\nNow, these are very, very large identifiers.\n\nTwo additional things to note here:\n\n* Make them human readable -- such that people can read them, and have an idea about what they identify.\n* Make tools and conventions for use in local contexts -- and make the identifiers short, suggestive, and memorable."
+         },
+         "format": "Fat_Info",
+         "uid": "66a1ff2403d411eca6ed60a44c24df47"
+      },
+      {
+         "children": [
+            "7d91e2b6044511ec8c6860a44c24df47"
+         ],
+         "data": {
+            "Name": "Status Notes &amp; History"
+         },
+         "format": "DEFAULT",
+         "uid": "6a9ec0a1044511ecb05b60a44c24df47"
+      },
+      {
+         "children": [
+            "b6bd801803cb11eca6e660a44c24df47",
+            "caeabe8903ca11eca20b60a44c24df47",
+            "65891ef303cb11ec894160a44c24df47",
+            "635cdcd6050f11ec918660a44c24df47",
+            "85c925a2050f11eca8b260a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 15:29:30.675198",
+            "Hook": "data the completely identifies an XUUID",
+            "Name": "Hard Data",
+            "Notes": "The hard data for an XUUID takes the form of key-value pairs.\nA key is always a UTF-8 string.\nA value can be either a UTF-8 string, or another XUUID.\nIt is critical that an XUUID is clearly distinguishable from a UTF-8 string, however it is represented.\n\n(NOTE: the following notes about JSON and NLSD are highly speculative.  2021-08-22)\nIn JSON, it would most likely be represented as a dictionary, and literally represented.\nIn NLSD, it would most likely be either (A) a literal dictionary, or (B) a string with a short-hand identifier, and a meta tag reading \"XUUID\".\n\nThe basic strategic idea is this:\n* Represent the type of information that is being identified.\n* Represent a lot of identifying information about the thing identified.\n* Include the time that the identifier was created.\n* Include some random information as well.\n\nThe identifying information is information that should not change.\n\nPeople and things change, and people will want to change the identifiers for themselves and for the things they care about.  It is not impossible to change identifiers, but it is cumbersome.  So it is important to choose identifiers that are unlikely to change, and it is also important that system tooling support is able to change identifiers as well.\n\nThe XUUID system is flexibility -- no particular key-value pairs are strictly required.  (Although, the \"null identifier\", an identifier with nothing in it, is not particularly valuable.)  The more key-value pairs that are present in the XUUID, the more descriptive it can be, and the greater that the guarantee of uniqueness will be.  Descriptiveness also assists at the time of identifying equivalences."
+         },
+         "format": "Fat_Info",
+         "uid": "6b0087f0039811ec8e3e60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 10:50:25.130912",
+            "Description": "a 32-bit scheme for uniquely identifying data items, primarily relying on randomness for autonomy and non-collision",
+            "Hook": "Universally Unique Identifier",
+            "Name": "UUID",
+            "Notes": "for example: \"013a6b57-51ba-4787-b6c5-474f2299d5ad\"\n\naka: \"GUID\" or \"Globally Unique Identifier\" -- in Microsoft's context",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Universally_unique_identifier"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "6de14041037111ec886460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:27:36.432461",
+            "Hook": "where one can get data associated with this identifier",
+            "Name": "Sourcing",
+            "Notes": "One interesting thing about the contemporary use of URLs as identifiers, is that the URL itself provides its own source information.\n\nFor example, a lot of W3C specifications are identified by a URL.  If you go to that URL, you see the full text of the specification, presented as a web page.\n\n"
+         },
+         "format": "Fat_Info",
+         "uid": "7182e90903ca11ecae2060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 10:13:33.802107",
+            "Name": "How will JSON data reference XUUIDs?",
+            "Research": "Possibilities:\n* Shortnames are remapped and chosen so as not to conflict with genuine values.\n\nNote:\n* Direct embedding isn't really an option, because TYPE values often reference other types, which themselves reference other types, etc.,.  The chain can get quite long, and you'd need to embed the entire thing for every type.\n  -- it seems that the JSON packaging must include some sort of \n  -- it might be worth looking into general JSON container formats -- do they exist?"
+         },
+         "format": "Fat_Question",
+         "uid": "723d00d1043511ec977c60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 13:06:36.191687",
+            "Description": "I use the word \"GUUID\" to refer abstractly to any identifier that is part of a system of universally unique identification, and a \"GUUID System\" to refer to the system itself",
+            "Hook": "general unversally unique identifier",
+            "Name": "GUUID",
+            "Notes": "A UUID is a UUID and also a GUUID.\nAn XUUID is a XUUID and also a GUUID.\nBut a UUID is not an XUUID, and vice versal."
+         },
+         "format": "Inquiry_Definition",
+         "uid": "74362dcd038411ecb67b60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:42:25.054411",
+            "Hook": "short identifiers",
+            "Name": "Brief",
+            "Notes": "Setting aside for the moment the concern that shorter identifiers are more likely to collide than longer identifiers, a shorter identifier is preferable to a longer identifier, simply because shorter identifiers cost more.\n\nWhen identifiers are sufficiently short, they can be held in a person's memory, especially if the identifier is also memorable."
+         },
+         "format": "Fat_Info",
+         "uid": "75089bf1038911ec9e0e60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 10:57:47.951274",
+            "Description": "Microsoft's name for a UUID",
+            "Hook": "Microsoft's name for a UUID",
+            "Name": "GUID"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "75d246a4037211ecb3b760a44c24df47"
+      },
+      {
+         "children": [
+            "6a9ec0a1044511ecb05b60a44c24df47",
+            "825a24df03cc11ec861a60a44c24df47",
+            "466ffeab039811ec99ec60a44c24df47",
+            "226b0abd043411ec9cc660a44c24df47",
+            "1436a58b043411ecb6c160a44c24df47",
+            "179c5300037111ecb09560a44c24df47"
+         ],
+         "data": {
+            "Contact": "Lion Kimbro",
+            "Created": "2021-08-22 10:07:46.848129",
+            "Description": "What if there were a unique page number, for every thing you can imagine?\nYou can name it, and feel confident that that name is unique everywhere, and could be, at least hypothetically speaking, found?\nOr that it is like language, and that you and others who also share interest in the thing, could communicate about it?\n\nThat sketches the basic scope of this project.\n\nThis project is both a declaration, and an inquiry.  That is, there is material here, but there is also openness.\n\nThis project lives in an idea between three points: an academic inquiry, a data specification, and a software implementation.  But the primary point of the project is the development of the idea.\n\nYou are invited to participate in it, as well, in whatever capacity you choose.\n\nWhile I intend to make working software and an implementable speficication, the primary focus of the work is to develop the idea, so that it is the right idea.  The belief is that then, those who are better positioned towards the propoagation of the idea into form and social adoption and such, will hear about the idea, and be informed by the idea, and hopefully, the best parts of the idea will achieve realization.\n\nThere is another possibility, which is that there may already be centers of activity that have previously discovered this idea, or a superior one, and developed it.  If this is the case, the goal is to find out about that effort, and join it.\n\nSo there are parts of this project that are about education, both learning things ourselves, and teaching others.  Talking with the global community and looking for others similarly motivated is important as well.  Then there are other parts of this project that are about imagination and invention.  And there are other parts of this project that are about writing specifications and tinkering with code.  There may even be good code that implements a solid specification and that is fully useable as a demonstration.  I would be very happy if we even found that this system was reimplemented and used broadly in various systems in the world.  But the primary goal here is to develop the idea of a truly globally unique identification system that also works locally with short names.",
+            "EmailAddress": "LionKimbro@gmail.com",
+            "Hook": "Extended Universally Unique Identifiers",
+            "Log": "2021-08-22 document formed",
+            "Name": "XUUIDs",
+            "Notes": "All time references are localtime (Seattle, WA,) unless otherwise specified.",
+            "PhoneNumber": "206.427.2545"
+         },
+         "format": "Inquiry_Project",
+         "uid": "7906470a036b11ec929960a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 12:08:30.495972",
+            "Hook": "Project Started",
+            "Name": "2021-08-23",
+            "Notes": "COMPLETED:\n* basic thought and layout\n\nTODO:\n* spec out pyxuuid\n* spec out XUUIDs in NLSD\n* spec out XUUIDs in JSON\n"
+         },
+         "format": "Fat_Info",
+         "uid": "7d91e2b6044511ec8c6860a44c24df47"
+      },
+      {
+         "children": [
+            "979c2aea036c11ec90fc60a44c24df47",
+            "0505f7f1038411ec99b760a44c24df47",
+            "c5f2552c036d11ec8dec60a44c24df47"
+         ],
+         "data": {
+            "Name": "Introducing the Problem Space"
+         },
+         "format": "DEFAULT",
+         "uid": "825a24df03cc11ec861a60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:13:00.000000",
+            "Name": "TO WRITE",
+            "Notes": "I need to write further about this."
+         },
+         "format": "Todo_Flag",
+         "uid": "848da2f9050f11ec8ec060a44c24df47"
+      },
+      {
+         "children": [
+            "3d689e4c051211ecb5fb60a44c24df47",
+            "75d246a4037211ecb3b760a44c24df47",
+            "74362dcd038411ecb67b60a44c24df47",
+            "2b0b942903d511ecb6c560a44c24df47",
+            "4230cc4503d511ecb57960a44c24df47",
+            "afd8846803d411ecb50060a44c24df47",
+            "3967192103d511ecbb0160a44c24df47",
+            "6de14041037111ec886460a44c24df47",
+            "37a27774038611ec839f60a44c24df47"
+         ],
+         "data": {
+            "Name": "Master Index"
+         },
+         "format": "DEFAULT",
+         "uid": "85c06b89037211eca4fe60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:14:36.884317",
+            "Hook": "random data unlikely to be replicated",
+            "Name": "Random Information"
+         },
+         "format": "Fat_Info",
+         "uid": "85c925a2050f11eca8b260a44c24df47"
+      },
+      {
+         "children": [
+            "6063fa12043511ec840860a44c24df47",
+            "723d00d1043511ec977c60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-23 10:07:08.405958",
+            "Hook": "listing identifiers via JSON",
+            "Name": "XUUID specification via JSON",
+            "Notes": "It's not possible to distinguish types in JSON, so XUUID information is supplied alone, in a separate file.  I'm not sure how I'm going to make this work."
+         },
+         "format": "Fat_Info",
+         "uid": "8c8637bf043411ec988860a44c24df47"
+      },
+      {
+         "children": [
+            "6de14041037111ec886460a44c24df47",
+            "75d246a4037211ecb3b760a44c24df47",
+            "37a27774038611ec839f60a44c24df47",
+            "74362dcd038411ecb67b60a44c24df47"
+         ],
+         "data": {
+            "Name": "Universally Unique Identifiers"
+         },
+         "format": "DEFAULT",
+         "uid": "8d8efb24037211ecaa6560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:36:04.337796",
+            "Hook": "",
+            "Name": "Are collisions recoverable?",
+            "Question": "Are collisions recoverable?"
+         },
+         "format": "Fat_Question",
+         "uid": "921bb627038811ecb0cd60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 10:15:47.658826",
+            "Hook": "brainstorming topics",
+            "Name": "Preliminary Thoughts",
+            "Notes": "\nBasic structure of my idea:\n* What a truly globally unique identifier looks like.\n* Pargmatics of an identifier:\n** a hard identifier -- that which, without, the thing is not uniquely identified\n** soft information -- authentication, sourcing, recommended naming, and other descriptive information\n** local information -- local short name, cached location, local annotation\n"
+         },
+         "format": "Fat_Info",
+         "uid": "979c2aea036c11ec90fc60a44c24df47"
+      },
+      {
+         "children": [
+            "b209c23b03cf11eca8aa60a44c24df47",
+            "da83944803d011ecb3ae60a44c24df47",
+            "cd2172a603d311ec8aa260a44c24df47",
+            "19e751f203d111ecbd9160a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 22:04:30.597383",
+            "Hook": "drawbacks of this system",
+            "Name": "Concerns with XUUID"
+         },
+         "format": "Fat_Info",
+         "uid": "9941aa4e03cf11ecaaa460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:29:18.766821",
+            "Hook": "data associated with the identifier",
+            "Name": "Bundled Data",
+            "Notes": "This refers to data that is packaged along with an identifier, or otherwise associated with the identifier, but that is not specifically about the identifier.\n\nData often comes in bundles, and it is reasonable to think that data will be bundled with identifiers, that is not specifically about the identifiers.  This is called \"bundled\" data."
+         },
+         "format": "Fat_Info",
+         "uid": "ae81e4f703ca11ecaad860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-22 22:40:55.979530",
+            "Description": "This is a greatly shortened identifier, for use within a program's own scope, standing in for a much longer, full identifier.",
+            "Hook": "a short identifier for an XUUID",
+            "Name": "shortname"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "afd8846803d411ecb50060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 10:08:21.800233",
+            "Hook": "Python Module for reading XUUID data and managing short names",
+            "Name": "pyxuuid"
+         },
+         "format": "Fat_Info",
+         "uid": "b1ef84d0043411ecb11660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:05:12.174034",
+            "Hook": "meaningful information in the identifier is available to anyone or anything that encounter it",
+            "Name": "Privacy Leaks",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "b209c23b03cf11eca8aa60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:36:42.075957",
+            "Name": "CHECK: claim about XUUID",
+            "Notes": "In \"Hard Data\" note, I wrote:\n-----------------------------------------\n(NOTE: the following notes about JSON and NLSD are highly speculative.  2021-08-22)\nIn JSON, it would most likely be represented as a dictionary, and literally represented.\nIn NLSD, it would most likely be either (A) a literal dictionary, or (B) a string with a short-hand identifier, and a meta tag reading \"XUUID\".\n-----------------------------------------\nThat's pretty speculative."
+         },
+         "format": "Todo_Flag",
+         "uid": "b6bd801803cb11eca6e660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:51:11.540735",
+            "Hook": "other identifiers that this identifier can be considered equivalent to",
+            "Name": "AKA",
+            "Notes": "For example, if the XUUID were:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\n...a given piece of AKA information might be:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"David Rushton Brock Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"RANDOM\": \"7f2635e8-8a6a-4a83-8028-6c0a923790d5\"}\n\n...and still another might be:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"USERNAME\": \"ultraman\",\n   \"HOST\": \"The Armory\",\n   \"LOCATION\": \"UCSC, Santa Cruz, CA\",\n   \"RANDOM\": \"ca5f43b0-65ac-444d-b84d-adb809278649\"}\n\nIf the soft data for identifier included an AKA list, these two additional identifiers might be supplied, "
+         },
+         "format": "Fat_Info",
+         "uid": "bcfb4bfe03cd11ecb2f660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 12:10:11.375528",
+            "Name": "WARNING: NONE OF THIS HAS EVEN BEEN STARTED"
+         },
+         "format": "Todo_Flag",
+         "uid": "bd1df899044511ec8b2e60a44c24df47"
+      },
+      {
+         "children": [
+            "1dc1d4fb045111ec81e360a44c24df47"
+         ],
+         "data": {
+            "Answer": "It's confined to MIME data.\nI think the concept can be applied more broadly, but people mean MIME data when they say it, it seems.",
+            "Created": "2021-08-23 13:28:58.736674",
+            "Hook": "Do I correctly understand the idea of \"multi-part\" data?",
+            "Name": "\"Multi-part\" ..?",
+            "Question": "What does \"multi-part\" really mean?",
+            "Research": "https://developer.mozilla.org/en-US/docs/Web/HTTP/Basics_of_HTTP/MIME_types",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/MIME#Multipart_messages"
+         },
+         "format": "Fat_Question",
+         "uid": "bed8095c045011ecb11960a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:44:29.757301",
+            "Hook": "identifiers that a person can hold in their mind",
+            "Name": "Memorable",
+            "Notes": "There is certainly a connection between suggestive and memorable, but not necessarily.\n\nHere I am refering to the ability to hold an identifier in mind.\n\n\"X5K\" is not suggestive, but it is more memorable than \"4DX9EPZ5M2PPX\".\n\nNote that \"Banana\" may be just as memorable as \"Axe,\" regardless of \"Axe\" being shorter than \"Banana.\""
+         },
+         "format": "Fat_Info",
+         "uid": "bf5cc292038911ecabcf60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 10:38:25.327995",
+            "Hook": "GUIDs suggest nothing",
+            "Name": "GUIDs are NOT suggestive"
+         },
+         "format": "Fat_Info",
+         "uid": "c0d80ad1036f11ec8c7260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-23 13:36:11.605193",
+            "Hook": "Would this term be useful?",
+            "Name": "\"Container-format\" ..?",
+            "Research": "\"A container format (informally, sometimes called a wrapper) or metafile is a file format that allows multiple data streams to be embedded into a single file, usually along with metadata for identifying and further detailing those streams.[1] Notable examples of container formats include archive files (such as the ZIP format) and formats used for multimedia playback (such as Matroska, MP4, and AVI). Among the earliest cross-platform container formats were Distinguished Encoding Rules and the 1985 Interchange File Format.\"",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Container_format_(computing)"
+         },
+         "format": "Fat_Question",
+         "uid": "c0da87da045111eca66060a44c24df47"
+      },
+      {
+         "children": [
+            "ccf1dee5038a11ecb8c060a44c24df47",
+            "d922a86a038a11ec9e1e60a44c24df47",
+            "d460d77b038a11ec82f860a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 10:24:14.895441",
+            "Hook": "(GUIDs, UUIDs)",
+            "Name": "Are GUIDs good unique global identifiers?",
+            "Question": "Are GUIDs good unique global identifiers?\nNote that -- What is \"good\" is explored in: \"What qualities might we be looking for in a GUUID system?\"",
+            "Research": ""
+         },
+         "format": "Fat_Question",
+         "uid": "c5f2552c036d11ec8dec60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 10:38:40.152537",
+            "Hook": "there is a lack of system support for using them",
+            "Name": "ABBREVIATION SUPPORT LACKING",
+            "Notes": "\n\nhttps://blog.codinghorror.com/primary-keys-ids-versus-guids/\n\"Cumbersome to debug where userid='{BAE7DF4-DDF-3RG-5TY3E3RF456AS10}'\"\n\nAndrew P comments: \"Another advantage of integers however is that they produce friendlier URLs. For web apps, I favor the HiLo table key pattern.\""
+         },
+         "format": "Fat_Info",
+         "uid": "c9ae167f036f11ec854660a44c24df47"
+      },
+      {
+         "children": [
+            "afd8846803d411ecb50060a44c24df47",
+            "37a27774038611ec839f60a44c24df47",
+            "4e53716c03d511eca3f360a44c24df47"
+         ],
+         "data": {
+            "Name": "XUUID-specific terminology"
+         },
+         "format": "DEFAULT",
+         "uid": "ca186f1803d411ecb60960a44c24df47"
+      },
+      {
+         "children": [
+            "e44e378b050e11ec945f60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 21:30:06.430170",
+            "Hook": "the type of thing identified",
+            "Name": "Type",
+            "Notes": "One of the most descriptive things that can go into an identifier is the type of the thing identified.  For example, if the thing identified is a person, then there should be something like: \"TYPE\": \"PERSON\".\n\nI propose that TYPE is a standard recommendation.  Unless there is a specific reason not to, all XUUIDs SHOULD feature a \"TYPE\" key.\n\nBut \"PERSON\" might not be specific enough -- it'd be nice to have a genuine XUUID for a Person, as well, for many reasons.  For example, \"PERSON\" might mean, \"a Person, as a concept within this particular context\" -- perhaps in a video game, for instance.  Or \"person\" might mean a citizen of a specific country, in a particular context.  To clarify that what is identified is \"a real life person who is or has been alive in the material universe,\" we might want to have a very specific identifier.\n\nThat is, there should probably be a specific identifier for the person type itself.\n\nSo while the value of \"TYPE\" can be a freehand string, -- which would be perfectly fine in many ordinary conventional uses, if we want to make something a little more formal, we can also use a specific XUUID as the value.\n\nA person type might look something like:\n\n  {\"TYPE\": [XUUID:] \"TYPE\",\n   \"TITLE\": \"Person\",\n   \"VERSION\": 1,\n   \"DESCRIBES\": \"A human person, real or imaginary.\",\n   \"RANDOM\": \"994adda1-ad02-4566-9169-31595895cd3d\"}\n\nNote here that type itself needs to be defined.  It might look like so:\n\n  {\"TYPE\": \"XUUID TYPE\",\n   \"TYPENAME\": \"XUUID TYPE\",\n   \"VERSION\": 1,\n   \"DESCRIBES\": \"A TYPE within conventional XUUID type identifiers.\",\n   \"RANDOM\": \"b8205bc2-7d9f-428f-b6a7-75668ff82162\"}\n\nNote that these identifiers are fairly descriptive.\n\nIt is an open question to me whether the description should be in the soft data, or in the hard data.\nIf the description is kept in the soft data, then it can be changed with context and evolution of understanding.  In the hard data, it is fixed.  I can see advantages on either side -- definitness, or malleability.  For \"Person,\" it makes a clear statement about what it is.  If you changed the definition, you would have a different type.\n\nThis is an example of a place where we can see the difference between UUIDs and XUUIDs.  Looking at a UUID, such as 994adda1-ad02-4566-9169-31595895cd3d, we cannot see what it is about.  But here, due to the \"TYPE\" information, we can read clearly that this is an identifier of an XUUID type."
+         },
+         "format": "Fat_Info",
+         "uid": "caeabe8903ca11eca20b60a44c24df47"
+      },
+      {
+         "children": [
+            "bed8095c045011ecb11960a44c24df47",
+            "c0da87da045111eca66060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-23 13:22:11.068908",
+            "Name": "JSON Multi-part Format Exists?",
+            "Question": "I want to know if there's an established standard for multi-part JSON data?\nWhat I mean is a kind of file that has many different parts to it, the user of which might be interested in one part or another but not necessarily all of the parts.\nI am thinking about for example graphic resources associated with a program, or whatever.",
+            "Research": "- multipart\n- container\n- resource file\n- composite document"
+         },
+         "format": "Fat_Question",
+         "uid": "cbdadf40044f11ecabe960a44c24df47"
+      },
+      {
+         "children": [
+            "ffd52fbe039711eca77560a44c24df47"
+         ],
+         "data": {
+            "Name": "Pro"
+         },
+         "format": "DEFAULT",
+         "uid": "ccf1dee5038a11ecb8c060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:34:35.614685",
+            "Hook": "AKA blocks make it easier to put 2+2 together",
+            "Name": "Automated Inference",
+            "Notes": "The idea of AKA blocks in the Soft Data section, if automated, make it easier for people to make assertions about what identities are linked with what other identities.\n\nThis is a general danger with computers and specifically databases, *period,* but we need to understand what we're stepping into.  Anything that automates inferencing changes the landscape, and is likely to do so in unexpected ways.  This is a danger of the XUUID system that must be understood and thought about."
+         },
+         "format": "Fat_Info",
+         "uid": "cd2172a603d311ec8aa260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Behrooz, Founder &amp; CTO at Rayan Pardazesh Espand",
+            "Created": "2021-08-22 11:28:53.549774",
+            "Hook": "saw a GUID collision in MSSQL 2008 R2",
+            "Quotation": "\"Everybody saying no is wrong.I already have collided 1 UniqueIdentifier with a dataset of less than half a million records, MSSQL 2008 R2\"",
+            "SourceURL": "https://stackoverflow.com/questions/184869/are-guid-collisions-possible#comment15551334_184869"
+         },
+         "format": "Inquiry_Quotation",
+         "uid": "cdce040f037611ec88b960a44c24df47"
+      },
+      {
+         "children": [
+            "f4596f06038711ecaa4d60a44c24df47",
+            "921bb627038811ecb0cd60a44c24df47",
+            "1dc411c4038811ecbcf960a44c24df47",
+            "2733b997038811eca52a60a44c24df47",
+            "2d0d851b038811eca15a60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-22 13:30:39.579003",
+            "Hook": "(which is a given)",
+            "Name": "Unique",
+            "Notes": "The root assumption of this project is that we're looking for a universally unique identifier.\n\nStill, there are some questions about \"uniqueness,\" primarily in the realm of probabilities and error tolerance."
+         },
+         "format": "Fat_Info",
+         "uid": "d0899ad7038711ec91d160a44c24df47"
+      },
+      {
+         "children": [
+            "bd1df899044511ec8b2e60a44c24df47"
+         ],
+         "data": {
+            "Name": "Completed"
+         },
+         "format": "DEFAULT",
+         "uid": "d34ca269044511ec8d4860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 21:51:49.156429",
+            "Hook": "hints for meaningfully expressing this XUUID in a short way",
+            "Name": "Recommended Naming",
+            "Notes": "For example, recommendations might be expressed with:\n\n  \"RECOMMENDATIONS\": \"LION LIONK LIONKIMBRO KIMBRO LEO\"\n\nAnything could be done with these recommendations; Perhaps:\n\n  \"LION\"\n  \"LION1\"\n  \"LION2\"\n  \"LION3\"\n  \"LION.A\"\n  \"LION.B\"\n  \"LION.C\"\n  ...\n\nThese are only suggestions via the soft data, for how to shorten the data item;  It might just be assigned a local serial number and that's it."
+         },
+         "format": "Fat_Info",
+         "uid": "d366d7f803cd11ec959e60a44c24df47"
+      },
+      {
+         "children": [
+            "c0d80ad1036f11ec8c7260a44c24df47",
+            "c9ae167f036f11ec854660a44c24df47"
+         ],
+         "data": {
+            "Name": "Con"
+         },
+         "format": "DEFAULT",
+         "uid": "d460d77b038a11ec82f860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:49:10.447501",
+            "Hook": "descriptive information in addition to whatever information is present in the hard identifier",
+            "Name": "Additional Descriptive Information",
+            "Notes": "For example, my identifier could be linked with associated soft data:\n\n  {\"SEX\": \"MALE\"}\n\n"
+         },
+         "format": "Fat_Info",
+         "uid": "d692578403d511ec968460a44c24df47"
+      },
+      {
+         "children": [
+            "34ed2b2a038411ec80f460a44c24df47"
+         ],
+         "data": {
+            "Name": "Indetermant"
+         },
+         "format": "DEFAULT",
+         "uid": "d922a86a038a11ec9e1e60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:13:29.577991",
+            "Hook": "exposed information is not necessarily visible to casual users",
+            "Name": "Unwitting Exposure",
+            "Notes": "Not only is meaningful information in the identifiable available to programs that encounter it, but -- FURTHERMORE, it may be invisible to the user that is carrying it..!\n\nTo illustrate, imagine the following scenario:\n\nSuppose that a user logs into a computer with their username and password.\n\nUnbeknownst to them, an identifier, assembled from previous information that the user entered, is now associated with their login.  That identifier includes the users birthname, birthplace, and birthdate.\n\nThe user opens up a word processor and creates a document to be distributed publicly.  The word processor automatically fills out a field of \"Author,\" and the author is identified by the XUUID -- which includes the user's birthname, birthplace, and birthdate, as described above.\n\nNow the user uploads that document to an online community.\n\nNowhere in the user interface does the user see their birthname, birthplace, and birthdate, -- perhaps they only used an alias, because they do not trust the online community.\n\nBut someone technically savvy in the online community can look at the source code for the document, and see the XUUID for the author.  This user's XUUID includes their birthname, birthplace, and birthdate, and that information was unwittingly to the author included in the document that was posted online."
+         },
+         "format": "Fat_Info",
+         "uid": "da83944803d011ecb3ae60a44c24df47"
+      },
+      {
+         "children": [
+            "5f274c52043411ec80a360a44c24df47",
+            "8c8637bf043411ec988860a44c24df47"
+         ],
+         "data": {
+            "Name": "Conceptualizing"
+         },
+         "format": "DEFAULT",
+         "uid": "dfe6c3dd044511ec8e1360a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:10:05.966504",
+            "Hook": "Should written descriptions go inside of hard type data?",
+            "Name": "Written Descriptions?"
+         },
+         "format": "Fat_Question",
+         "uid": "e44e378b050e11ec945f60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 22:49:36.215304",
+            "Hook": "any additional information associated with the XUUID",
+            "Name": "Additional General Information",
+            "Notes": "Anything conceivably could be attached as soft data.\n\nFor example, suggested system configuration information could be associated with an identifier for a device driver.\n\nOr an image identifier could have soft data attached, that includes an actual image:\n\n  {\"BMPBASE32\": \"IJGV4AAAAAAAAAAAHYAAAABIAAAAACAAAAAAQAAAAAAQAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB77774AP6AAAACBQAAAAXMAAAAH7AAAAB7YAAAALWAAAAD7QAAAA74AAAAA=\"}\n\nThat string is a base-32 encoding of a Windows BMP file of a crude happy-face character.\n\nIt's entirely reasonable to believe that the \"soft\" data might just be the hard data itself -- the identifier is itself the image, in its entirety.  The point of an identifier is often to be a key to a larger image, -- something that is specifically smaller so that it can reference a larger thing.  But it doesn't have to be, and use as a language token -- albeit a large language token -- has its own merit as well."
+         },
+         "format": "Fat_Info",
+         "uid": "e5ee325703d511ec905060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:31:39.661287",
+            "Hook": "",
+            "Name": "How bad would a collision be?",
+            "Question": "How bad would a collision be?"
+         },
+         "format": "Fat_Question",
+         "uid": "f4596f06038711ecaa4d60a44c24df47"
+      },
+      {
+         "children": [
+            "fb852403044511ecae9260a44c24df47"
+         ],
+         "data": {
+            "Name": "Sketching"
+         },
+         "format": "DEFAULT",
+         "uid": "f5fbd857044511ecb5f560a44c24df47"
+      },
+      {
+         "children": [
+            "cbdadf40044f11ecabe960a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-23 12:11:58.247322",
+            "Hook": "what needs to be included?",
+            "Name": "Data Format Concepts",
+            "Notes": "The following things need to be there, when publishing data:\n\n* a mapping from local short names (local to the data file, at a minimum) and the full hard data identifiers\n* the full hard data identifiers\n* the associated soft data\n* string values need to be separated from string references to other data\n  -- in JSON, this would look like [\"STR\", \"string value\"] vs. [\"REF\", \"reference value\"],\n     or possibly just \"string value\" vs. [\"REF\", \"reference value\"], specifically decoded\n     in the context of reading out identifiers information\n  -- in NLSD, the meta tag can identify XUUID identifiers (META: \"XUUID\")\n\nSo I am imagining for a JSON package, something like:\n\n* an outer encasement\n  -- with version information,\n  -- with optional attached data,\n  -- with an XUUIDs section\n\n{\"TYPE\": \"XUUID Packaged Data\",\n \"VERSION\": 1,\n \"DATA\": ...,\n \"XUUIDS\": [...]}\n\nAlternatively, creating a multi-part JSON container format:\n\n[{\"SECTION\": \"section name\",\n  ...,\n  \"CONTENT\": ...},\n {\"SECTION\": \"MAIN\",\n  ...,\n  \"CONTENT\": ...},\n ...]\n"
+         },
+         "format": "Fat_Info",
+         "uid": "fb852403044511ecae9260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 13:53:26.313393",
+            "Hook": "it's easy to create a new identifier",
+            "Name": "Easily Assigned",
+            "Notes": "Some systems that are hard to assign in:\n- domain names (highly political, highly competitive)\n- IP addresses\n\nSome systems that are easy to assign in:\n- UUID v4 (just choose random numbers)\n"
+         },
+         "format": "Fat_Info",
+         "uid": "ff2cb8f3038a11ecbf7b60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-22 15:26:34.019870",
+            "Hook": "Mathematically Unique Enough",
+            "Name": "Unique",
+            "Notes": "Even accounting for the birthday paradox, there are enough UUIDs here.\n\n[INSERT HERE: mathematics of the birthday paradox]\n[INSERT HERE: different conceptualizations of the space of allocation before a collision]\n"
+         },
+         "format": "Fat_Info",
+         "uid": "ffd52fbe039711eca77560a44c24df47"
+      }
+   ],
+   "properties": {
+      "tlversion": "3.1.3",
+      "topnodes": [
+         "7906470a036b11ec929960a44c24df47"
+      ]
+   }
+}
