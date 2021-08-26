@@ -136,6 +136,52 @@
                "fieldtype": "ExternalLink"
             },
             {
+               "fieldname": "WikipediaURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Inquiry_Con",
+         "icon": "round_minus",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Author",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Description",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "URL",
+               "fieldtype": "ExternalLink"
+            },
+            {
                "fieldname": "HomeURL",
                "fieldtype": "ExternalLink"
             },
@@ -146,6 +192,52 @@
          ],
          "formatname": "Inquiry_Definition",
          "icon": "book_3",
+         "outputlines": [
+            "{*Name*}"
+         ],
+         "titleline": "{*Name*} -- {*Hook*}"
+      },
+      {
+         "fields": [
+            {
+               "fieldname": "Name",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Author",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Created",
+               "fieldtype": "DateTime",
+               "format": "%Y-%B-%-d %-I:%M:%S %p",
+               "init": "Now"
+            },
+            {
+               "fieldname": "Hook",
+               "fieldtype": "OneLineText"
+            },
+            {
+               "fieldname": "Description",
+               "fieldtype": "SpacedText",
+               "lines": 8
+            },
+            {
+               "fieldname": "Notes",
+               "fieldtype": "SpacedText",
+               "lines": 30
+            },
+            {
+               "fieldname": "URL",
+               "fieldtype": "ExternalLink"
+            },
+            {
+               "fieldname": "WikipediaURL",
+               "fieldtype": "ExternalLink"
+            }
+         ],
+         "formatname": "Inquiry_Pro",
+         "icon": "round_plus",
          "outputlines": [
             "{*Name*}"
          ],
@@ -308,12 +400,49 @@
    "nodes": [
       {
          "children": [
+            "043b7a4105d411eca1ab60a44c24df47"
+         ],
+         "data": {
+            "Name": "Related Works"
+         },
+         "format": "DEFAULT",
+         "uid": "017420c705d411ecade560a44c24df47"
+      },
+      {
+         "children": [
+            "06c1ad6d05fb11ecbc5760a44c24df47",
+            "52eb3fba064411ecb22960a44c24df47",
+            "d6cd3af705fc11ecbe7d60a44c24df47",
+            "1ae11983064311ecb41160a44c24df47"
+         ],
+         "data": {
+            "Name": "RFCs"
+         },
+         "format": "DEFAULT",
+         "uid": "0389bad405fb11ecb0b960a44c24df47"
+      },
+      {
+         "children": [
+            "e282385e062711ecaca760a44c24df47",
+            "06a186a305d411ecb25760a44c24df47",
+            "3280336605dd11ec839460a44c24df47",
+            "abf5e1af064311ec857660a44c24df47"
+         ],
+         "data": {
+            "Name": "Identification Schemes"
+         },
+         "format": "DEFAULT",
+         "uid": "043b7a4105d411eca1ab60a44c24df47"
+      },
+      {
+         "children": [
             "d0899ad7038711ec91d160a44c24df47",
             "49673e21038911ec9e3460a44c24df47",
             "bf5cc292038911ecabcf60a44c24df47",
             "400af42b038911ecabe160a44c24df47",
             "75089bf1038911ec9e0e60a44c24df47",
-            "ff2cb8f3038a11ecbf7b60a44c24df47"
+            "ff2cb8f3038a11ecbf7b60a44c24df47",
+            "7778f1c605dc11ecb25f60a44c24df47"
          ],
          "data": {
             "Created": "2021-08-22 13:03:29.648638",
@@ -325,6 +454,47 @@
          "uid": "0505f7f1038411ec99b760a44c24df47"
       },
       {
+         "children": [
+            "76a3b01405d411ec968c60a44c24df47",
+            "abb22f0205d411ec92a960a44c24df47",
+            "0a939f0c05d511ecbb2d60a44c24df47",
+            "87f53b4205d411ecb15d60a44c24df47",
+            "325f7c2805d511ec98c960a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-25 11:41:16.563127",
+            "Hook": "URLs combine sourcing and identification",
+            "Name": "URLs",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "06a186a305d411ecb25760a44c24df47"
+      },
+      {
+         "children": [
+            "5e6c15f205fd11ec9acb60a44c24df47"
+         ],
+         "data": {
+            "Description": "\"\"\"\n   A common case for modern applications is to create a unique\n   identifier for use as a primary key in a database table.  This\n   identifier usually implements an embedded timestamp that is sortable\n   using the monotonic creation time in the most significant bits.  In\n   addition the identifier is highly collision resistant, difficult to\n   guess, and provides minimal security attack surfaces.  None of the\n   existing UUID versions, including UUIDv1, fulfill each of these\n   requirements in the most efficient possible way.  This document is a\n   proposal to update [RFC4122] with three new UUID versions that\n   address these concerns, each with different trade-offs.\n\"\"\"",
+            "Hook": "time-based UUID formats",
+            "Name": "draft-peabody-dispatch-new-uuid-format-01",
+            "URL": "https://datatracker.ietf.org/doc/html/draft-peabody-dispatch-new-uuid-format"
+         },
+         "format": "Research_Link",
+         "uid": "06c1ad6d05fb11ecbc5760a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-25 11:48:30.526234",
+            "Hook": "URLs are easy to construct such that they are meaningful",
+            "Name": "meaningful"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "0a939f0c05d511ecbb2d60a44c24df47"
+      },
+      {
          "children": [],
          "data": {
             "Created": "2021-08-22 22:29:15.681195",
@@ -334,6 +504,28 @@
          },
          "format": "Fat_Info",
          "uid": "0e6f78b403d311eca2ea60a44c24df47"
+      },
+      {
+         "children": [
+            "1121f88105db11ec8fe160a44c24df47",
+            "2b7b6b3305fd11ec8de560a44c24df47"
+         ],
+         "data": {
+            "Name": "Tidbits"
+         },
+         "format": "DEFAULT",
+         "uid": "0f09ee9005db11eca79260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:31:40.505767",
+            "Hook": "an interesting problem with assigning serial numbers",
+            "Name": "serial number problems",
+            "Notes": "I like serial numbers because they are very short, automatic, and sequential.\n\nNow, when serial numbers are assigned, you have to keep them in the originating document, so that if something interrupts the sequential numbering that arose in the past, the identifiers don't change from the point of divergence.  So if you numbered things \"1\", \"2\", \"3\", you need to make sure that those numbers stay attached to the things numbered.\n\nYou ALSO need to keep track of, \"Here's the next number I'm going to assign.\"  Yes, you can infer a number from the things named, but what if the very last thing were deleted?  You wouldn't see it.  If you don't want to recycle your numbers, you have to keep track of the next number to be assigned.\n\nNow that's not hard.  And so far, so good.\n\nBut there's an interesting situation that was pointed out to me by Ciprian Craciun:  If the data is stored in a repository, and the next value is also stored in that repository, and then if you go backwards in time -- by recalling a historical version of the repository, for instance, and then develop from there -- you have now assigned a number twice.  Because the \"next number to assign\" counter was rolled backwards.\n\nSo serial numbers need to be pulled from some external agency that is dedicated to monotonically increasing serial numbers, and we presently don't have consumer infrastructure (that I'm aware of) for assigning serial numbers as a general service.  Maybe it exists, but in my nearly 40 years of programming, I've not heard of it.\n\nIn this particular story, Ciprian Cracium was advocating for random number draw.  Of course, "
+         },
+         "format": "Fat_Info",
+         "uid": "1121f88105db11ec8fe160a44c24df47"
       },
       {
          "children": [
@@ -360,7 +552,11 @@
       },
       {
          "children": [
-            "1f573cc4037111ec86bf60a44c24df47"
+            "1f573cc4037111ec86bf60a44c24df47",
+            "017420c705d411ecade560a44c24df47",
+            "3ceea74105fa11ecb25960a44c24df47",
+            "0389bad405fb11ecb0b960a44c24df47",
+            "0f09ee9005db11eca79260a44c24df47"
          ],
          "data": {
             "Name": "Library"
@@ -378,6 +574,17 @@
          },
          "format": "Fat_Info",
          "uid": "19e751f203d111ecbd9160a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Description": "\"\"\"\nTag URIs (also known as \"tags\") are designed to be unique\nacross space and time while being tractable to humans.  They are\ndistinct from most other URIs in that they have no authoritative\nresolution mechanism.  A tag may be used purely as an entity\nidentifier.  Furthermore, using tags has some advantages over the\ncommon practice of using \"http\" URIs as identifiers for\nnon-HTTP-accessible resources.\n\"\"\"\n\n\"\"\"\n   1.  Identifiers are likely to be unique across space and time, and\n       come from a practically inexhaustible supply.\n\n   2.  Identifiers are relatively convenient for humans to mint\n       (create), read, type, remember etc.\n\n   3.  No central registration is necessary, at least for holders of\n       domain names or email addresses; and there is negligible cost to\n       mint each new identifier.\n\n   4.  The identifiers are independent of any particular resolution\n       scheme.\n\"\"\"",
+            "Hook": "<b>The 'tag' URI Scheme (XUUID is closest to this)</b>",
+            "Name": "RFC-4151",
+            "URL": "https://datatracker.ietf.org/doc/html/rfc4151"
+         },
+         "format": "Research_Link",
+         "uid": "1ae11983064311ecb41160a44c24df47"
       },
       {
          "children": [
@@ -479,6 +686,17 @@
       {
          "children": [],
          "data": {
+            "Description": "Supply an alphabet, and a generation speed, and see how long before there's a 1% probability of a collision.",
+            "Hook": "how long before there's a collision?",
+            "Name": "Nano ID Collision Calculator",
+            "URL": "https://alex7kom.github.io/nano-nanoid-cc/?alphabet=0123456789ABCDEFGHJKMNPQRSTVWXYZ&size=16&speed=10000000&speedUnit=second"
+         },
+         "format": "Research_Link",
+         "uid": "2b7b6b3305fd11ec8de560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
             "Created": "2021-08-22 13:33:14.000000",
             "Name": "Is \"good enough\" ok?",
             "Question": "If software is \"generally good enough,\" but under unusual circumstances produces collisions, does that warrant revisiting the system as a whole?"
@@ -496,6 +714,34 @@
          },
          "format": "Fat_Info",
          "uid": "2f5759d603ca11ec983c60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 11:49:37.293418",
+            "Description": "What I mean is something like:\nIf you were using Microsoft Word, or something, -- how could the document be identified within your domain name?\nYou'd have to host the file somewhere within your published-to-the-Internet directory tree.\nIf you move the file to a different directory, the identifier changes, without some management.\nIf you want to identify sub-components of the file, how will that work?\nThat is, the owner of the domain name needs to think consciously about how the tree beneath the domain name is managed and mapped to all of the resources beneath it, and exert effort to track changes and maintain tree integrity.  This quickly gets daunting.\n\nTo contrast, if the document has its own identifier through something like XUUID, then it can be moved freely, but it's identifier remains the same, requiring no management.  The document is assigned a type, a name, a version, perhaps an author, a time of creation, and some random information.  From that point on, it is identifiable.\n\nNow it is true that this document has to be sourced somehow -- which means placing a file into a web server's file tree, or publishing the file to an XUUID-aware, XUUID-searchable repository, or something like that.  But however the user searches for, loads, and receives the file, it is identifiable in principle by its XUUID, which remains invariant.",
+            "Hook": "the maintainer of the domain's space must call the shots on naming",
+            "Name": "deliberate"
+         },
+         "format": "Inquiry_Con",
+         "uid": "325f7c2805d511ec98c960a44c24df47"
+      },
+      {
+         "children": [
+            "39a874f205dd11ec8f9a60a44c24df47",
+            "47b22e8a05dd11ecb38a60a44c24df47",
+            "568f141c05dd11ec9b7060a44c24df47",
+            "8e015cd405dd11ecb2e860a44c24df47",
+            "a069383205dd11ec81c860a44c24df47",
+            "ab98ec4605dd11ec8dff60a44c24df47",
+            "fef0399005dd11ec985060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-25 12:46:53.481661",
+            "Name": "UUIDs"
+         },
+         "format": "Fat_Info",
+         "uid": "3280336605dd11ec839460a44c24df47"
       },
       {
          "children": [],
@@ -577,12 +823,43 @@
       {
          "children": [],
          "data": {
+            "Created": "2021-08-25 12:47:05.489534",
+            "Hook": "you just need a good random number generation system",
+            "Name": "Easily Assigned"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "39a874f205dd11ec8f9a60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
             "Created": "2021-08-22 21:36:42.075957",
             "Name": "CHECK: currency of Concerns with XUUID section",
             "Notes": "Near the end of \"An Aside About Privacy,\" there's reference to the Concerns with XUUID sections on privacy.  Check that these are still current, in the future."
          },
          "format": "Todo_Flag",
          "uid": "39ea10a403d411eca01060a44c24df47"
+      },
+      {
+         "children": [
+            "3e4ceb8205d811ec8d4860a44c24df47",
+            "da06dde105d911ecb29060a44c24df47"
+         ],
+         "data": {
+            "Name": "Open Questions"
+         },
+         "format": "DEFAULT",
+         "uid": "39edb16e05d811ecae8c60a44c24df47"
+      },
+      {
+         "children": [
+            "d9b3599505fa11ec87d460a44c24df47"
+         ],
+         "data": {
+            "Name": "Related Communities"
+         },
+         "format": "DEFAULT",
+         "uid": "3ceea74105fa11ecb25960a44c24df47"
       },
       {
          "children": [],
@@ -595,6 +872,18 @@
          },
          "format": "Inquiry_Definition",
          "uid": "3d689e4c051211ecb5fb60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:11:27.971519",
+            "Hook": "how do you retrieve the most recent version of a file?",
+            "Name": "\"the file\" and \"file versions\"",
+            "Question": "There's nothing necessarily linking a file to versions of the file.  How do you get a file's versions and its most recent version?",
+            "Research": "My thinking is presently this:\n\nPossibility A:\n* There's no reason a file cannot be identified by two identifiers -- the first a claim to be a specific document, and then the second a claim to be a specific version of the same specific document.\n\nPossibility B:\n* \"Version\" is soft-data?  It's shipped with the identifier?  This seems like a bad idea to me, and that such an annotation should be considered \"bundled\" data rather than soft data.  The reason being that the soft data is supposed to be soft data associated with the identifier itself.  But what is being described is a variation specifically, and a variation property of the identified file specifically, and nothing fundamentally invariant about the identifier itself.  For example, imagine an identifier, \"War and Peace.\"  It's a book.  OK, if we take that same identifier and say, \"War and Peace means version 3,\" we have a problem.  Because we are not meaning to say that the singular identifier \"War and Peace\" refers to version 3; We instead needed to say, \"This book is version 3 of War and Peace.\"  But what we've said with the soft data is \"The identifier 'War and Peace' means, version 3 of War and Peace.\"  That's not right.  Instead, it would be better to say, \"this book is War and Peace,\" and then to also say, \"this book is version 3 of War and Peace.\"\n\nAnother possibility is to say,\n  \"This book is THE MOST RECENT VERSION of War and Peace.\"\nThat is, create an identifier that includes the concept of, \"the most recent.\"  Perhaps the identifier would be, \"VERSION\": \"FRESHEST\".  That identifier would be dynamically applied, and only applied to the most recent version of War and Peace.\n\nThis would be an example of bundled data, which would, through some kind of language convention, say that: \"There are multiple versions of War and Peace, and the most recent version that you know about would be called VERSION: FRESHEST.\"\n\nHere we come to an interesting problem, because there is no programmatic way of constructing that identifier the same way each time -- because the identifier includes a random component.  So it has to be delivered in full, from the point of inception, it seems.\n\nSo this (potential) problem seems to me an area for further research.\n"
+         },
+         "format": "Fat_Question",
+         "uid": "3e4ceb8205d811ec8d4860a44c24df47"
       },
       {
          "children": [],
@@ -632,13 +921,24 @@
          "children": [
             "5245e769039811ec861260a44c24df47",
             "62ae2bfc039811ec981160a44c24df47",
-            "9941aa4e03cf11ecaaa460a44c24df47"
+            "9941aa4e03cf11ecaaa460a44c24df47",
+            "39edb16e05d811ecae8c60a44c24df47"
          ],
          "data": {
             "Name": "XUUID ideas"
          },
          "format": "DEFAULT",
          "uid": "466ffeab039811ec99ec60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:47:29.041370",
+            "Hook": "when produced correctly, and in the main",
+            "Name": "Unique"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "47b22e8a05dd11ecb38a60a44c24df47"
       },
       {
          "children": [],
@@ -650,6 +950,15 @@
          },
          "format": "Fat_Info",
          "uid": "49673e21038911ec9e3460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-26 01:00:43.148755",
+            "Name": "TO WRITE MORE ABOUT"
+         },
+         "format": "Todo_Flag",
+         "uid": "4a21f797064911ec9c2e60a44c24df47"
       },
       {
          "children": [
@@ -679,6 +988,37 @@
          },
          "format": "Fat_Info",
          "uid": "5245e769039811ec861260a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Hook": "Uniform Resource Identifier (URI): Generic Syntax",
+            "Name": "RFC-3986",
+            "URL": "https://datatracker.ietf.org/doc/html/rfc3986"
+         },
+         "format": "Research_Link",
+         "uid": "52eb3fba064411ecb22960a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:47:53.977142",
+            "Hook": "UUID concepts are integrated in most industrial databases",
+            "Name": "well supported"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "568f141c05dd11ec9b7060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Description": "\"\"\"\nUUID6: a timestamp with a weird epoch and 100 ns precision like in UUID1, but in a big-endian order that sorts naturally by time, plus some random bits instead of a predictable MAC address.\n\nUUID7: like UUID6, but uses normal Unix timestamps and allows more timestamp precision.\n\nUUID8: like UUID7, but relaxes requirements on where the timestamp is coming from. Want to use a custom epoch or NTP timestamps or something? UUID8 allows it for the sake of flexibility and future-proofing, but the downside is that there's no standard way to parse the time from one of these -- the time source could be anything monotonic.\n\"\"\" -- pjscott",
+            "Hook": "\"A somewhat oversimplified summary of the new UUID formats:\"",
+            "Name": "(conversation about)",
+            "URL": "https://news.ycombinator.com/item?id=28090022"
+         },
+         "format": "Research_Link",
+         "uid": "5e6c15f205fd11ec9acb60a44c24df47"
       },
       {
          "children": [],
@@ -753,7 +1093,8 @@
       },
       {
          "children": [
-            "7d91e2b6044511ec8c6860a44c24df47"
+            "7d91e2b6044511ec8c6860a44c24df47",
+            "ae75efb205dc11ec99dd60a44c24df47"
          ],
          "data": {
             "Name": "Status Notes &amp; History"
@@ -765,6 +1106,7 @@
          "children": [
             "b6bd801803cb11eca6e660a44c24df47",
             "caeabe8903ca11eca20b60a44c24df47",
+            "7cb7306005d711ec9fde60a44c24df47",
             "65891ef303cb11ec894160a44c24df47",
             "635cdcd6050f11ec918660a44c24df47",
             "85c925a2050f11eca8b260a44c24df47"
@@ -848,6 +1190,28 @@
          "uid": "75d246a4037211ecb3b760a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-25 11:44:22.328731",
+            "Hook": "domain owner manages the space and takes responsibility for uniqueness",
+            "Name": "uniqueness"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "76a3b01405d411ec968c60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:41:39.700167",
+            "Hook": "can you line a series of things up in a row?",
+            "Name": "Sequencable",
+            "Notes": "Timestamps are sequencable.\nSerial number assigned items are sequencable.\n\nRandom draws are not sequencable, without supplemental data.\n"
+         },
+         "format": "Fat_Info",
+         "uid": "7778f1c605dc11ecb25f60a44c24df47"
+      },
+      {
          "children": [
             "6a9ec0a1044511ecb05b60a44c24df47",
             "825a24df03cc11ec861a60a44c24df47",
@@ -869,6 +1233,18 @@
          },
          "format": "Inquiry_Project",
          "uid": "7906470a036b11ec929960a44c24df47"
+      },
+      {
+         "children": [
+            "877316b905d711eca70660a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-25 12:06:01.013052",
+            "Hook": "version# for the data",
+            "Name": "Version"
+         },
+         "format": "Fat_Info",
+         "uid": "7cb7306005d711ec9fde60a44c24df47"
       },
       {
          "children": [],
@@ -932,6 +1308,28 @@
          "uid": "85c925a2050f11eca8b260a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Created": "2021-08-24 12:13:00.000000",
+            "Name": "TO WRITE",
+            "Notes": "I need to write further about this."
+         },
+         "format": "Todo_Flag",
+         "uid": "877316b905d711eca70660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-25 11:44:51.384403",
+            "Description": "",
+            "Hook": "you have to own a domain, and keep owning the domain",
+            "Name": "domain required"
+         },
+         "format": "Inquiry_Con",
+         "uid": "87f53b4205d411ecb15d60a44c24df47"
+      },
+      {
          "children": [
             "6063fa12043511ec840860a44c24df47",
             "723d00d1043511ec977c60a44c24df47"
@@ -957,6 +1355,16 @@
          },
          "format": "DEFAULT",
          "uid": "8d8efb24037211ecaa6560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:49:27.000802",
+            "Hook": "looking at a UUID, you have no idea what it is for",
+            "Name": "not descriptive"
+         },
+         "format": "Inquiry_Con",
+         "uid": "8e015cd405dd11ecb2e860a44c24df47"
       },
       {
          "children": [],
@@ -998,6 +1406,64 @@
       {
          "children": [],
          "data": {
+            "Created": "2021-08-25 12:49:57.880427",
+            "Hook": "not at all",
+            "Name": "not memorable"
+         },
+         "format": "Inquiry_Con",
+         "uid": "a069383205dd11ec81c860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:50:16.647994",
+            "Description": "To be fair -- XUUIDs are even longer than UUIDs, in the main.  (I can easily imagine that XUUIDs will typically CONTAIN UUIDs.)\n\nI'm hoping that the XUUID concept is delivered to the world with the recognition that we need tools in order to support long identifiers, and that these tools should maintain process-local or machine-local short names to accompany the long identifiers.",
+            "Hook": "not at all",
+            "Name": "not brief"
+         },
+         "format": "Inquiry_Con",
+         "uid": "ab98ec4605dd11ec8dff60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion Kimbro",
+            "Created": "2021-08-25 11:44:22.328731",
+            "Description": "",
+            "Hook": "the URL is both an identifier, and a sourcing location more information",
+            "Name": "sourcing"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "abb22f0205d411ec92a960a44c24df47"
+      },
+      {
+         "children": [
+            "b63a3a45064311ec9ff160a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-26 01:00:25.923627",
+            "Hook": "TO RESEARCH",
+            "Name": "OIDs",
+            "Notes": "\"OIDs\" seem to be a numerically expressed tree of nodes.\n\nWikipedia gives this example:\n\n1 ISO\n1.3 identified-organization,\n1.3.6 dod,\n1.3.6.1 internet,\n1.3.6.1.4 private,\n1.3.6.1.4.1 IANA enterprise numbers,\n1.3.6.1.4.1.343 Intel Corporation\n\n",
+            "SupportURL": "https://en.wikipedia.org/wiki/Object_identifier"
+         },
+         "format": "Fat_Info",
+         "uid": "abf5e1af064311ec857660a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:43:11.955141",
+            "Hook": "extending with ideas from conversation with Ciprian Craciun",
+            "Name": "2021-08-25",
+            "Notes": "I had a conversation with ciprian.craciun.\n\nWe talked about several things, including:\n* serial numbers; I've added a section on \"Sequencable\" as a virtue for an identifier system; also a tidbit (Library/Tidbits/serial number problems) about some gotchas, working with serial numbers\n* IETF standardized \"tags,\" which I am adding to a new \"Related Works\" section in the Library, and have similarities to the XUUID concept\n\nI've also written a bit about version numbers."
+         },
+         "format": "Fat_Info",
+         "uid": "ae75efb205dc11ec99dd60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
             "Created": "2021-08-22 21:29:18.766821",
             "Hook": "data associated with the identifier",
             "Name": "Bundled Data",
@@ -1005,6 +1471,19 @@
          },
          "format": "Fat_Info",
          "uid": "ae81e4f703ca11ecaad860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:57:31.460758",
+            "Hook": "how safe is it for people to divide the UUID space?",
+            "Name": "divisibility of UUIDs",
+            "Question": "What if people habitually divided the UUID space, in order to generate and maintain sequences?\n\nFor example, I have ten things.  I generate 10 UUIDs, sort them, and then assign them to the ten things, matching those ten things' sequence.\n\nNow I want to add ten things between thing #2 and #3 that existed before.  I generate UUIDs until I get 10 numbers that fit between the GUIDs for things #2 and #3, sort them, and assign them to the new things between #2 and #3.\n\nLather, rinse, repeat.\n\nIs this safe?  After how many iterations does this most likely break down?\nAnd what are the impacts for the global UUID space?  What is the likelihood of collisions arising if many people are doing this?  What if two people follow the same series of insertions, -- what is the likelihood of colliding?\n\nOne can imagine encoding the digits of pi by this procedure: Pick 10 GUIDs randomly, sort, and take the third one.  That represents \"3\".  Now divide the space between the 3rd and the 4th into 10 GUIDs picked randomly, sort, and take the first.  That represents \"3.1\".  Now divide the space between the first and the second of those divisions.  Take the 4th.  That represents \"3.14\".  Do on and on as many times as you can.  How many digits of pi did you pick out before you couldn't go further?  And what was your GUID?  How many people in the world can perform this procedure, before the likelihood of two people picking the same GUID got to, or above, 0.5?",
+            "Research": "This does mean that with each new item you add between others, you are narrowing the random search space.  Now if you are randomly inserting, this is a ln(N) problem -- and thus possibly not a problem at all.\n\nFrom the standpoint of \"boy, there's a lot of space in the GUID world,\" it looks kind of like infinitely divisible real numbers between 0.0 and 1.0.  If I had 0.1 and 0.2, I have a whole lot of options about how to subdivide that space.\n\nBut the GUIDs are not even countably infinite.  There is a limit.  Where is it?",
+            "URL": "https://math.stackexchange.com/questions/4233122/whats-the-likelihood-of-a-uuid-collision-through-repeat-subdivision"
+         },
+         "format": "Fat_Question",
+         "uid": "aec415e405de11ecb95360a44c24df47"
       },
       {
          "children": [],
@@ -1017,6 +1496,16 @@
          },
          "format": "Inquiry_Definition",
          "uid": "afd8846803d411ecb50060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Hook": "web page intended for exploration of this concept",
+            "Name": "Tag URI",
+            "URL": "http://www.taguri.org/"
+         },
+         "format": "Research_Link",
+         "uid": "b07b9da6064411ec9f1a60a44c24df47"
       },
       {
          "children": [],
@@ -1038,6 +1527,15 @@
          },
          "format": "Fat_Info",
          "uid": "b209c23b03cf11eca8aa60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-26 01:00:43.148755",
+            "Name": "TO RESEARCH"
+         },
+         "format": "Todo_Flag",
+         "uid": "b63a3a45064311ec9ff160a44c24df47"
       },
       {
          "children": [],
@@ -1249,8 +1747,8 @@
          "data": {
             "Created": "2021-08-22 21:51:49.156429",
             "Hook": "hints for meaningfully expressing this XUUID in a short way",
-            "Name": "Recommended Naming",
-            "Notes": "For example, recommendations might be expressed with:\n\n  \"RECOMMENDATIONS\": \"LION LIONK LIONKIMBRO KIMBRO LEO\"\n\nAnything could be done with these recommendations; Perhaps:\n\n  \"LION\"\n  \"LION1\"\n  \"LION2\"\n  \"LION3\"\n  \"LION.A\"\n  \"LION.B\"\n  \"LION.C\"\n  ...\n\nThese are only suggestions via the soft data, for how to shorten the data item;  It might just be assigned a local serial number and that's it."
+            "Name": "Suggested Naming",
+            "Notes": "For example, suggestions (\"suggestions?\" \"recommendations?\") might be expressed with:\n\n  \"SUGGESTEDSHORTNAMES\": \"LION LIONK LIONKIMBRO KIMBRO LEO\"\n\nAnything could be done with these suggestions; Perhaps:\n\n  \"LION\"\n  \"LION1\"\n  \"LION2\"\n  \"LION3\"\n  \"LION.A\"\n  \"LION.B\"\n  \"LION.C\"\n  ...\n\nThese are only suggestions via the soft data, for how to shorten the data item;  It might just be assigned a local serial number and that's it."
          },
          "format": "Fat_Info",
          "uid": "d366d7f803cd11ec959e60a44c24df47"
@@ -1272,10 +1770,21 @@
             "Created": "2021-08-22 22:49:10.447501",
             "Hook": "descriptive information in addition to whatever information is present in the hard identifier",
             "Name": "Additional Descriptive Information",
-            "Notes": "For example, my identifier could be linked with associated soft data:\n\n  {\"SEX\": \"MALE\"}\n\n"
+            "Notes": "For example, my identifier could be linked with associated soft data:\n\n  {\"SEX\": \"MALE\"}\n\nOr an image identifier could have soft data attached, that includes an actual image:\n\n  {\"BMPBASE32\": \"IJGV4AAAAAAAAAAAHYAAAABIAAAAACAAAAAAQAAAAAAQAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB77774AP6AAAACBQAAAAXMAAAAH7AAAAB7YAAAALWAAAAD7QAAAA74AAAAA=\"}\n\nThat string is a base-32 encoding of a Windows BMP file of a crude happy-face character.\n\nIt's entirely reasonable to believe that the \"soft\" data might just be the hard data itself -- the identifier is itself the image, in its entirety.  The point of an identifier is often to be a key to a larger image, -- something that is specifically smaller so that it can reference a larger thing.  But it doesn't have to be, and use as a language token -- albeit a large language token -- has its own merit as well."
          },
          "format": "Fat_Info",
          "uid": "d692578403d511ec968460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Description": "\"\"\"\n   This specification defines a Uniform Resource Name namespace for\n   UUIDs (Universally Unique IDentifier), also known as GUIDs (Globally\n   Unique IDentifier).\n\"\"\"\n\nex: \"urn:uuid:f81d4fae-7dec-11d0-a765-00a0c91e6bf6\"",
+            "Hook": "  <b>A Universally Unique IDentifier (UUID) URN Namespace</b>",
+            "Name": "RFC-4122",
+            "URL": "https://datatracker.ietf.org/doc/html/rfc4122"
+         },
+         "format": "Research_Link",
+         "uid": "d6cd3af705fc11ecbe7d60a44c24df47"
       },
       {
          "children": [
@@ -1286,6 +1795,30 @@
          },
          "format": "DEFAULT",
          "uid": "d922a86a038a11ec9e1e60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 16:19:11.701906",
+            "Hook": "Tools for Thought",
+            "Name": "New",
+            "Notes": "I learned about this group when Tom pointed me to:\n\nhttps://lu.ma/tfti-august\n",
+            "SupportURL": "https://talk.fission.codes/tag/tools-for-thought"
+         },
+         "format": "Fat_Info",
+         "uid": "d9b3599505fa11ec87d460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-25 12:22:56.556796",
+            "Hook": "does an XUUID have a maximum size?",
+            "Name": "maximum size",
+            "Question": "The question is, \"Should there be a maximum size for an XUUID identifier?\"",
+            "Research": "Having size limits makes it easier for machines to make guarantees and meet determinations about what can be consumed, and what cannot be consumed, and what requirements need to be met in order to fully implement a specification.\n\nI'd love to cap an XUUID at 1 MB, arbitrarily speaking, but that might be a problem at some point.  (If 1 MB isn't enough to uniquely identify your data, I don't know what would be.)  At that point, it seems like you're delivering entire files, rather than identifying things.\n\nHowever, devil's advocate:\nI can imagine that Jack's working on a gigantic photoshop image file -- it's 32 GB in size.\nA thumbnail is generated for it -- 1.1 MB in size.\nThat thumbnail is going to be used as the identifier for the 32 GB file.\n\nSketchy, but conceivable.  Seems a little ridiculous to me, but it's not totally crazy."
+         },
+         "format": "Fat_Question",
+         "uid": "da06dde105d911ecb29060a44c24df47"
       },
       {
          "children": [],
@@ -1310,6 +1843,21 @@
          "uid": "dfe6c3dd044511ec8e1360a44c24df47"
       },
       {
+         "children": [
+            "1ae11983064311ecb41160a44c24df47",
+            "b07b9da6064411ec9f1a60a44c24df47",
+            "4a21f797064911ec9c2e60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-25 21:41:31.531887",
+            "Hook": "XUUID is CLOSEST to this concept",
+            "Name": "RFC-4151 Tags",
+            "SupportURL": "https://datatracker.ietf.org/doc/html/rfc4151"
+         },
+         "format": "Fat_Info",
+         "uid": "e282385e062711ecaca760a44c24df47"
+      },
+      {
          "children": [],
          "data": {
             "Created": "2021-08-24 12:10:05.966504",
@@ -1325,7 +1873,7 @@
             "Created": "2021-08-22 22:49:36.215304",
             "Hook": "any additional information associated with the XUUID",
             "Name": "Additional General Information",
-            "Notes": "Anything conceivably could be attached as soft data.\n\nFor example, suggested system configuration information could be associated with an identifier for a device driver.\n\nOr an image identifier could have soft data attached, that includes an actual image:\n\n  {\"BMPBASE32\": \"IJGV4AAAAAAAAAAAHYAAAABIAAAAACAAAAAAQAAAAAAQAAIAAAAAAABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAB77774AP6AAAACBQAAAAXMAAAAH7AAAAB7YAAAALWAAAAD7QAAAA74AAAAA=\"}\n\nThat string is a base-32 encoding of a Windows BMP file of a crude happy-face character.\n\nIt's entirely reasonable to believe that the \"soft\" data might just be the hard data itself -- the identifier is itself the image, in its entirety.  The point of an identifier is often to be a key to a larger image, -- something that is specifically smaller so that it can reference a larger thing.  But it doesn't have to be, and use as a language token -- albeit a large language token -- has its own merit as well."
+            "Notes": "Anything conceivably could be attached as soft data.\n\nFor example, suggested system configuration information could be associated with an identifier for a device driver.\n\n"
          },
          "format": "Fat_Info",
          "uid": "e5ee325703d511ec905060a44c24df47"
@@ -1363,6 +1911,20 @@
          },
          "format": "Fat_Info",
          "uid": "fb852403044511ecae9260a44c24df47"
+      },
+      {
+         "children": [
+            "aec415e405de11ecb95360a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-25 12:52:36.471028",
+            "Description": "",
+            "Hook": "sequence is just random",
+            "Name": "not sequencable",
+            "Notes": "You could make up for this by generating a bunch of GUIDs, and then sorting them, and then applying them to the things you are identifying so that they can be sequenced.\n\nBut what are the consequences?"
+         },
+         "format": "Inquiry_Con",
+         "uid": "fef0399005dd11ec985060a44c24df47"
       },
       {
          "children": [],
