@@ -442,7 +442,8 @@
             "400af42b038911ecabe160a44c24df47",
             "75089bf1038911ec9e0e60a44c24df47",
             "ff2cb8f3038a11ecbf7b60a44c24df47",
-            "7778f1c605dc11ecb25f60a44c24df47"
+            "7778f1c605dc11ecb25f60a44c24df47",
+            "6edd95c806e811eca74160a44c24df47"
          ],
          "data": {
             "Created": "2021-08-22 13:03:29.648638",
@@ -482,6 +483,17 @@
          },
          "format": "Research_Link",
          "uid": "06c1ad6d05fb11ecbc5760a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:09:59.227849",
+            "Hook": "they are highly unambiguous",
+            "Name": "XUUIDs are strictly typed"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "06c9b1e206f511ec89b760a44c24df47"
       },
       {
          "children": [],
@@ -578,6 +590,20 @@
       {
          "children": [],
          "data": {
+            "Created": "2021-08-26 21:13:19.050011",
+            "Description": "The way it has been presented, with short identifying information attached, there's a lot of responsibility on preserving naming coherence on the part of the authority.\n\nUsing the example:  \"tag:sandro@hawke.org,2001-06-05:Taiko\" -- it seems that the responsibility of preserving naming coherence rests heavily on the authority.",
+            "Hook": "as presented, tags seem to be manually assigned (note: this is about practice, not technology)",
+            "Name": "manually managed?",
+            "Notes": "This is easily remedied.\n\nInstead of identifiers like:\n\n  \"tag:lionkimbro@gmail.com,2021:url-0000\"  (the first link number, assigned by a link database,)\n\n...create tags like:\n\n  \"tag:lionkimbro@gmail.com,2021-08-26:urlrecord:home-collection:url-0000\"\n\nThe software needs to prompt the user for:\n* the user's email address\n* a unique name for the url collection (in this example, \"home-collection\")\n\nThe software needs to take note of:\n* the date at which the collection was created (in this example, \"2021-08-26\")\n\nNote that collisions are still possible if the software loses track of which URL serial number it will assign next.\n\n\nFor comparison, an equivalent-ish XUUID identifier would look like this:\n\n  {\"TYPE\": [XUUID:] \"SAVEDURL\",\n   \"VERSION\": 1,\n   \"CREATED\": \"2021-08-26T21:06:36\",\n   \"COLLECTION\": [XUUID:] \"HOMECOLLECTION\",\n   \"SERIALNUM\": 0,\n   \"AUTHOR\": [XUUID:] \"LION\"}\n\n\nThe \"negative\" of \"manually managed\" isn't really fixed -- it's just important, I think, that when programs assign tags, that appropriate effort is taken to make sure that they really will not collide with other programs' methods of assignment.",
+            "URL": "http://www.taguri.org/",
+            "WikipediaURL": "https://en.wikipedia.org/wiki/Tag_URI_scheme"
+         },
+         "format": "Inquiry_Con",
+         "uid": "1a8a18ca06ed11ec8a4560a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
             "Description": "\"\"\"\nTag URIs (also known as \"tags\") are designed to be unique\nacross space and time while being tractable to humans.  They are\ndistinct from most other URIs in that they have no authoritative\nresolution mechanism.  A tag may be used purely as an entity\nidentifier.  Furthermore, using tags has some advantages over the\ncommon practice of using \"http\" URIs as identifiers for\nnon-HTTP-accessible resources.\n\"\"\"\n\n\"\"\"\n   1.  Identifiers are likely to be unique across space and time, and\n       come from a practically inexhaustible supply.\n\n   2.  Identifiers are relatively convenient for humans to mint\n       (create), read, type, remember etc.\n\n   3.  No central registration is necessary, at least for holders of\n       domain names or email addresses; and there is negligible cost to\n       mint each new identifier.\n\n   4.  The identifiers are independent of any particular resolution\n       scheme.\n\"\"\"",
             "Hook": "<b>The 'tag' URI Scheme (XUUID is closest to this)</b>",
             "Name": "RFC-4151",
@@ -626,6 +652,18 @@
          "uid": "1dc411c4038811ecbcf960a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:10:39.123255",
+            "Hook": "key/value pairs, types that can specify encoding information, nestable structures",
+            "Name": "XUUIDs are logically interpretable",
+            "Notes": "If a tag URI says \"person\" and another tag URI says \"person\", how compatible are the tags?\nThey could be strictly compatible, or they could be completely incompatible.\n\nCompatible:\n\n  tag:lionkimbro@gmail.com,2001:person:LionKimbro:1977-08-29\n  tag:lionkimbro@gmail.com,2001:person:SomeoneElsesName:1978-02-25\n\nIncompatible:\n\n  tag:lionkimbro@gmail.com,2001:person:LionKimbro:1977-08-29\n  tag:foo@example.com,2004:person:Kimbro:Lion:blond:blue:1977-08-29\n\nThat is, the encoding information is hard to figure from the simple designator, \"person\".\n\nWhereas in my thought about how XUUID would work, you'd have a specific \"TYPE\" field, and the value for that type would be another identifier, and that identifier would have a specific name and a specific version and a specific authority and a specific time of creation and so it couldn't be confused with another system, and there would be associated information about what things meant and how they are associated.\n\nA system looking at the two identifiers would say, \"This one follows one system, the other follows another, and they are not automatically compatible, even though they both say that they describe People.\""
+         },
+         "format": "Inquiry_Pro",
+         "uid": "1e91402806f511ecb07d60a44c24df47"
+      },
+      {
          "children": [
             "8d8efb24037211ecaa6560a44c24df47",
             "ca186f1803d411ecb60960a44c24df47",
@@ -647,6 +685,18 @@
          },
          "format": "Fat_Info",
          "uid": "2104a77103d311ec8b0b60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:17:54.423908",
+            "Hook": "more information is prompted for",
+            "Name": "XUUIDs are far less likely to collide",
+            "Notes": "This is a stylistic issue, though.  As described above (in \"manually managed?\"), tags can be made really long, and include all the information suggested for XUUIDs, and thus made non-colliding as well."
+         },
+         "format": "Inquiry_Pro",
+         "uid": "2206dbf106f611ec9f6760a44c24df47"
       },
       {
          "children": [
@@ -888,16 +938,6 @@
       {
          "children": [],
          "data": {
-            "Created": "2021-08-24 12:13:00.000000",
-            "Name": "TO WRITE",
-            "Notes": "I need to write further about this."
-         },
-         "format": "Todo_Flag",
-         "uid": "3f7c26bc050f11ecba7460a44c24df47"
-      },
-      {
-         "children": [],
-         "data": {
             "Created": "2021-08-22 13:40:56.150532",
             "Hook": "tools exist that support use of the identifiers",
             "Name": "Supported",
@@ -952,15 +992,6 @@
          "uid": "49673e21038911ec9e3460a44c24df47"
       },
       {
-         "children": [],
-         "data": {
-            "Created": "2021-08-26 01:00:43.148755",
-            "Name": "TO WRITE MORE ABOUT"
-         },
-         "format": "Todo_Flag",
-         "uid": "4a21f797064911ec9c2e60a44c24df47"
-      },
-      {
          "children": [
             "2b0b942903d511ecb6c560a44c24df47",
             "4230cc4503d511ecb57960a44c24df47",
@@ -1002,12 +1033,32 @@
       {
          "children": [],
          "data": {
+            "Created": "2021-08-26 22:19:20.111086",
+            "Hook": "at least, as presented",
+            "Name": "Tag URIs are shorter"
+         },
+         "format": "Inquiry_Con",
+         "uid": "5519af4f06f611ecabc360a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
             "Created": "2021-08-25 12:47:53.977142",
             "Hook": "UUID concepts are integrated in most industrial databases",
             "Name": "well supported"
          },
          "format": "Inquiry_Pro",
          "uid": "568f141c05dd11ec9b7060a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-26 22:19:31.654971",
+            "Hook": "as long as they are kept short and simple, that is",
+            "Name": "Tag URIs are easier to remember"
+         },
+         "format": "Inquiry_Con",
+         "uid": "5bfb244f06f611ec9afe60a44c24df47"
       },
       {
          "children": [],
@@ -1056,26 +1107,23 @@
          "uid": "62ae2bfc039811ec981160a44c24df47"
       },
       {
-         "children": [
-            "848da2f9050f11ec8ec060a44c24df47"
-         ],
+         "children": [],
          "data": {
             "Created": "2021-08-24 12:13:39.132130",
             "Hook": "the time that the identifier was created",
             "Name": "Time of Creation",
-            "Notes": ""
+            "Notes": "Dates can be expressed with any degree of precision.\n\n  \"2021\"     in 2021\n  \"2021-08\"  in August of 2021\n  \"2021-08-26\"  some time during August 26th, 2021\n  \"2021-08-26T...\"  (a more specific narrowing of time)\n\nThsi time represents the time at which the identifier was created.\n\nTimes should always be expressed UTC."
          },
          "format": "Fat_Info",
          "uid": "635cdcd6050f11ec918660a44c24df47"
       },
       {
-         "children": [
-            "3f7c26bc050f11ecba7460a44c24df47"
-         ],
+         "children": [],
          "data": {
             "Created": "2021-08-22 21:34:25.838232",
             "Hook": "descriptive and (most likely) unchanging information about the thing identified",
-            "Name": "Identifying Information"
+            "Name": "Identifying Information",
+            "Notes": "This is any information about the thing identified that is unlikely to change.\n\nIt should be expressed in numbers and in human readable language, in language chosen at the author's discression.\n\nIt is not essential that the identifying information be absolutely unchangable -- since I intend for there to be tools for both relabelling data sets, and methods for identifying identifiers that are to be understood to be equivalent.\n\nFor example, consider a person's name:  A person's name is relatively constant, but people do change their names in life for myriad reasons.  I don't think we should shy away from using a person's name as an identifier, just because it might change one day.  (A good reason not to use a person's name would be for privacy reasons, but that is not the distinction I am focusing on immediately -- right now I am talking about the likelihood of an identifying factor changing.)\n\nThe key thing is to find descriptive information that is relatively stable."
          },
          "format": "Fat_Info",
          "uid": "65891ef303cb11ec894160a44c24df47"
@@ -1107,8 +1155,9 @@
             "b6bd801803cb11eca6e660a44c24df47",
             "caeabe8903ca11eca20b60a44c24df47",
             "7cb7306005d711ec9fde60a44c24df47",
-            "65891ef303cb11ec894160a44c24df47",
+            "fa5bb02106e811ec8a8d60a44c24df47",
             "635cdcd6050f11ec918660a44c24df47",
+            "65891ef303cb11ec894160a44c24df47",
             "85c925a2050f11eca8b260a44c24df47"
          ],
          "data": {
@@ -1132,6 +1181,17 @@
          },
          "format": "Inquiry_Definition",
          "uid": "6de14041037111ec886460a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-26 20:39:50.383764",
+            "Hook": "an accountable agent that ensures uniqueness and caretakes meaning through maintenance",
+            "Name": "Authority",
+            "Notes": "For example, the domain name system has a hierarchical system of authorities managing names.\n\nDisputes about naming and meaning can be resolved by talking with various authorities.\n\n(Whereas with version 4 UUIDs, there are no authorities;  There is no specific entitlement to any particular UUID.)"
+         },
+         "format": "Fat_Info",
+         "uid": "6edd95c806e811eca74160a44c24df47"
       },
       {
          "children": [],
@@ -1270,16 +1330,6 @@
          "uid": "825a24df03cc11ec861a60a44c24df47"
       },
       {
-         "children": [],
-         "data": {
-            "Created": "2021-08-24 12:13:00.000000",
-            "Name": "TO WRITE",
-            "Notes": "I need to write further about this."
-         },
-         "format": "Todo_Flag",
-         "uid": "848da2f9050f11ec8ec060a44c24df47"
-      },
-      {
          "children": [
             "3d689e4c051211ecb5fb60a44c24df47",
             "75d246a4037211ecb3b760a44c24df47",
@@ -1302,7 +1352,8 @@
          "data": {
             "Created": "2021-08-24 12:14:36.884317",
             "Hook": "random data unlikely to be replicated",
-            "Name": "Random Information"
+            "Name": "Random Information",
+            "Notes": "Note that if Authority information (+ a date that the authority is possessed) is supplied, random information is not as necessary.\nRandom information would protect against mistaken dual assignment of the same identifier by the same authority, but other than that, it is not necessary in that case."
          },
          "format": "Fat_Info",
          "uid": "85c925a2050f11eca8b260a44c24df47"
@@ -1376,6 +1427,17 @@
          },
          "format": "Fat_Question",
          "uid": "921bb627038811ecb0cd60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:21:10.901787",
+            "Hook": "you don't have to have special code to handle tag URIs, like you do with XUUIDs",
+            "Name": "Tag URIs requier NO machinery"
+         },
+         "format": "Inquiry_Con",
+         "uid": "9723010f06f611ecbd3d60a44c24df47"
       },
       {
          "children": [],
@@ -1566,6 +1628,18 @@
          },
          "format": "Todo_Flag",
          "uid": "bd1df899044511ec8b2e60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:22:15.733820",
+            "Description": "Because key-value pairs are clearly demarked, any key's value can be segregated to sort on.\nWith Tag URIs, lacking keys, it's harder to pick out what exactly is being sorted on.  You have to rely more on convention, and assuming that the type of the tag is in fact the type that you think it is.",
+            "Hook": "and they can be sequenced on multiple dimensions",
+            "Name": "XUUIDs can be unambiguously sequenced"
+         },
+         "format": "Inquiry_Pro",
+         "uid": "bdc7965f06f611ec9e0760a44c24df47"
       },
       {
          "children": [
@@ -1800,8 +1874,8 @@
          "children": [],
          "data": {
             "Created": "2021-08-25 16:19:11.701906",
-            "Hook": "Tools for Thought",
-            "Name": "New",
+            "Hook": "it seems like a notekeeping community",
+            "Name": "Tools for Thought",
             "Notes": "I learned about this group when Tom pointed me to:\n\nhttps://lu.ma/tfti-august\n",
             "SupportURL": "https://talk.fission.codes/tag/tools-for-thought"
          },
@@ -1846,16 +1920,38 @@
          "children": [
             "1ae11983064311ecb41160a44c24df47",
             "b07b9da6064411ec9f1a60a44c24df47",
-            "4a21f797064911ec9c2e60a44c24df47"
+            "1a8a18ca06ed11ec8a4560a44c24df47",
+            "e39b684106f411ecaafa60a44c24df47"
          ],
          "data": {
             "Created": "2021-08-25 21:41:31.531887",
             "Hook": "XUUID is CLOSEST to this concept",
             "Name": "RFC-4151 Tags",
+            "Notes": "Tag URIs are exceptionally close to the XUUID concept I describe here.\n\nTag URIs look like so:\n\n  tag:sandro@hawke.org,2001-06-05:Taiko\n\n\"tag:\"  -- identifies a Tag URI\n\"sandro@hawke.org\"  -- that's an email address, which specifically is chosen because it represents a clear authority at a given time\n\"2001-06-05\"  -- a date that that authority was under a specific person's control\n\"Taiko\"  -- the identfying information\n\nHere we see an Authority, a Time of Creation, and Identifying Information.\n\n---\n\nIt's really similar!\n",
             "SupportURL": "https://datatracker.ietf.org/doc/html/rfc4151"
          },
          "format": "Fat_Info",
          "uid": "e282385e062711ecaca760a44c24df47"
+      },
+      {
+         "children": [
+            "f80c89d206f411ecab8a60a44c24df47",
+            "5519af4f06f611ecabc360a44c24df47",
+            "5bfb244f06f611ec9afe60a44c24df47",
+            "9723010f06f611ecbd3d60a44c24df47",
+            "06c9b1e206f511ec89b760a44c24df47",
+            "1e91402806f511ecb07d60a44c24df47",
+            "2206dbf106f611ec9f6760a44c24df47",
+            "bdc7965f06f611ec9e0760a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-26 22:09:02.746667",
+            "Hook": "they're really close, but there are differences",
+            "Name": "How XUUID compares with Tag URIs",
+            "Notes": ""
+         },
+         "format": "Fat_Info",
+         "uid": "e39b684106f411ecaafa60a44c24df47"
       },
       {
          "children": [],
@@ -1900,6 +1996,28 @@
          "uid": "f5fbd857044511ecb5f560a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-26 22:09:34.500091",
+            "Hook": "they don't require special conventions for nesting structures like XUUIDs do",
+            "Name": "Tag URIs are just strings"
+         },
+         "format": "Inquiry_Con",
+         "uid": "f80c89d206f411ecab8a60a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-26 20:43:44.413494",
+            "Hook": "who is responsible for making this assignment?",
+            "Name": "Authority",
+            "Notes": "Taking a leaf from RFC-4151 tag URIs, uniqueness can be assured by an authority.\n\nTwo good ways to establish something that one has authority over are via the domain name system.\n\nSpecifically:\n\n1. use of an email address (ex: \"lionkimbro@gmail.com\"),\n2. use of a domain name (ex: \"taoriver.net\")\n\nSince email addresses and domain names are transferable, it is then critical to associate this information with a time at which the authority over the email address or domain name is clear.\n\nA way this might show up is:\n\n  {\"ASSIGNAUTHORITY\": \"lionkimbro@gmail.com\",\n   \"ASSIGNDATE\": \"2021-08-26\"}\n\nSo to annotate the example from before:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"ASSIGNAUTHORITY\": \"lionkimbro@gmail.com\",\n   \"ASSIGNDATE\": \"2021-08-26\",\n   \"RANDOM\": \"f0838b3c-dc7c-440d-b941-4b1d07d7eda4\"}\n\nNote that at this point, a \"RANDOM\" key is not so necessary, because nobody else will accidentally use the same ASSIGNEDBY and ASSIGNMENTDATE keys (unless this is a deliberate forgery, -- in which case, the random id will not help you either.)\n\nSo removing the \"RANDOM\" key, one would get:\n\n  {\"TYPE\": [XUUID:] \"TYPE.PERSON\",\n   \"NAME\": \"Lion Kimbro\",\n   \"DOB\": \"1977-08-29\",\n   \"BIRTHPLACE\": \"Monterey, CA\",\n   \"ASSIGNAUTHORITY\": \"lionkimbro@gmail.com\",\n   \"ASSIGNDATE\": \"2021-08-26\"}\n"
+         },
+         "format": "Fat_Info",
+         "uid": "fa5bb02106e811ec8a8d60a44c24df47"
+      },
+      {
          "children": [
             "cbdadf40044f11ecabe960a44c24df47"
          ],
@@ -1932,7 +2050,7 @@
             "Created": "2021-08-22 13:53:26.313393",
             "Hook": "it's easy to create a new identifier",
             "Name": "Easily Assigned",
-            "Notes": "Some systems that are hard to assign in:\n- domain names (highly political, highly competitive)\n- IP addresses\n\nSome systems that are easy to assign in:\n- UUID v4 (just choose random numbers)\n"
+            "Notes": "Some systems that are hard to assign in:\n- domain names (highly political, highly competitive)\n- IP addresses (requires block registration, multiple layers of delegation of block space)\n\nSome systems that are easy to assign in:\n- UUID v4 (just choose random numbers)\n"
          },
          "format": "Fat_Info",
          "uid": "ff2cb8f3038a11ecbf7b60a44c24df47"
