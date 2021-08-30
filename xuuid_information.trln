@@ -438,6 +438,7 @@
          "children": [
             "d0899ad7038711ec91d160a44c24df47",
             "49673e21038911ec9e3460a44c24df47",
+            "16131bf809c511ecab0360a44c24df47",
             "bf5cc292038911ecabcf60a44c24df47",
             "400af42b038911ecabe160a44c24df47",
             "75089bf1038911ec9e0e60a44c24df47",
@@ -507,6 +508,19 @@
          "uid": "0a939f0c05d511ecbb2d60a44c24df47"
       },
       {
+         "children": [
+            "cb322bfe070411ec841060a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-26 23:57:33.599714",
+            "Hook": "hard, soft, and local data for an identifier",
+            "Name": "Identifier Data",
+            "Notes": "\n{\"HARD\": (the Hard Identifier),\n \"SOFT\": {soft information},\n \"LOCAL\": {\"NAME\": \"...\"}}\n\n\"HARD\" contains the Hard Identifier.\n\n\"SOFT\" contains various soft data associated.\n\n\"LOCAL\" contains local data -- and by \"local,\" I mean local to this very file, including the other sections within this file.\nIt presently contains only one item: \"NAME\".\nThat name is the local name for this hard identifier."
+         },
+         "format": "Fat_Info",
+         "uid": "0de4aedc070411ec9b0460a44c24df47"
+      },
+      {
          "children": [],
          "data": {
             "Created": "2021-08-22 22:29:15.681195",
@@ -561,6 +575,17 @@
          },
          "format": "Inquiry_Quotation",
          "uid": "14cb7bcc037411ecb1e760a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-30 12:04:22.520114",
+            "Hook": "identifer where a machine can tell something of what it is, from the identifier",
+            "Name": "Machine Descriptive",
+            "Notes": "This is a harder problem, because it means that you need some type information in the identifier, and the type itself is an identifier.  Thus you need nestable identifiers.\n\n(This separates RFC-4151 tags from XUUID tags.)"
+         },
+         "format": "Fat_Info",
+         "uid": "16131bf809c511ecab0360a44c24df47"
       },
       {
          "children": [
@@ -985,7 +1010,7 @@
          "data": {
             "Created": "2021-08-22 13:41:11.854851",
             "Hook": "identifiers where you can tell something of what it is, from the identifier",
-            "Name": "Suggestive, Descriptive",
+            "Name": "Humanly Descriptive",
             "Notes": "For example, an identifier like \"Fred\" suggests to us, \"This is the name of a person,\" whereas a name like \"SN39584\" suggests to us \"This is a serial number,\" perhaps of a part or product number.\n\nMy name (my identifier) is \"Lion Kimbro\", and even if people don't know me or that there is somebody named \"Lion,\" they can probably guess that this is likely the name of a male person.\n\nIn contrast, a GUID only tells us that it is an identifier manufactured by a computer, and otherwise, we have to guess what is described."
          },
          "format": "Fat_Info",
@@ -1085,8 +1110,12 @@
       {
          "children": [],
          "data": {
+            "Answer": "Here's the convention to follow:\n\n{...}  -- that's a nested identifier\n[\"...\"]  -- that's a short name, referring to a nested identifier\n\"...\"  -- that's an actual string value",
             "Created": "2021-08-23 10:13:03.858536",
-            "Name": "How will JSON data distinguish between a value and a short name for an identifier?"
+            "Hook": "use [\"...\"] to refer to a short name",
+            "Name": "How will JSON data distinguish between a value and a short name for an identifier?",
+            "Question": "That is, JSON has to distinguish between:\n* a nested identifier\n* a short name referring to a nested identifier\n* an actual string value",
+            "Research": "Nested values are easy to distinguish -- because they are not strings.  (They are dictionaries.)\n\nThat leaves actual string values, and short name string values that are references to identifiers (to be nested) that have a local name."
          },
          "format": "Fat_Question",
          "uid": "6063fa12043511ec840860a44c24df47"
@@ -1743,6 +1772,28 @@
          "uid": "caeabe8903ca11eca20b60a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Created": "2021-08-30 12:02:16.449939",
+            "Hook": "you can't rigorously identiify types, and thus you can't rigorously decode the data",
+            "Name": "The Tag URI Type Problem",
+            "Notes": "Tags are great at being unique, but they aren't nestable.\n\nWhat that means is that you can't put a tag inside of a tag, and thus you can't uniquely identify a type.\n\nThe identify can meaningful to a human, but it can't be unambiguously meaningful to a machine.\n\nOf course, you can make up a convention like:\n\n  tag:lionkimbro@gmail.com,2021-08-30:person:LionKimbro\n                                      --+--- ----------\n                                        |             `\n                              made up type indicator   convention: this is the person's name, scrunched up\n\n...but somebody else could also use \"person\", and have a different convention.\n\nNow the identifier will still be UNIQUE, supposing that the different programs the user uses that assign identifiers don't step on one another's toes --\nBut if a computer is looking at an identifier made by something else, it can't tell if its compatible or not, easily.\n\nNow you could perhaps make the identifier something like:\n\n  tag:lionkimbro@gmail.com,2021-08-30:2021-08-30-lionkimbro@gmail.com-person:LionKimbro\n\n...and that would work.\nBut the more pieces of information you want to nest, the longer and longer this thing gets, until you may as well just use XUUID.\n\n\n"
+         },
+         "format": "Fat_Info",
+         "uid": "caee2cbb09c411ec9cf360a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-27 00:02:51.196927",
+            "Hook": "an example of collecting multiple identifiers, and using short names with them",
+            "Name": "Example",
+            "Notes": "[{\"HARD\": {\"TYPE\": \"ROOT-XUUID-TYPE\",\n           \"VER\": \"1\",\n           \"AUTHORITY\": \"lionkimbro@gmail.com\",\n           \"AUTHORITYDATE\": \"2021-08-27\"},\n  \"SOFT\": {\"DESCRIPTION\": \"The root XUUID type, that is used to express other XUUID types.\",\n           \"HARDKEYS\": \"TYPE TYPETITLE AUTHORITY AUTHORITYDATE\"},\n  \"LOCAL\": {\"NAME\": \"XUUIDTYPE\"}\n },\n {\"HARD\": {\"TYPE\": [\"XUUIDTYPE\"],\n           \"TYPETITLE\": \"URL Link Storage Database\",\n           \"DBVER\": 1,\n           \"AUTHORITY\": \"lionkimbro@gmail.com\",\n           \"AUTHORITYDATE\": \"2021-08-27\"},\n  \"SOFT\": {\"DESCRIPTION\": \"An identifier for a link storage database, of the type designed by Lion in 2021.\",\n           \"HARDKEYS\": \"...\"},\n  \"LOCAL\": {\"NAME\": \"URLDBTYPE\"},\n },\n {\"HARD\": {\"TYPE\": [\"URLDBTYPE\"],\n           \"TYPETITLE\": \"Lion's main link database\",\n           \"CREATOR\": \"lionkimbro@gmail.com\",\n           \"CREATEDON\": \"2021-08-27\"},\n  \"SOFT\": {},\n  \"LOCAL\": {\"NAME\": \"LIONSLINKDB\"},\n },\n {\"HARD\": {\"TYPE\": [\"XUUIDTYPE\"],\n           \"TYPETITLE\": \"Stored URL Link\",\n           \"VER\": \"1\",\n           \"FORDBTYPE\": [\"URLDBTYPE\"],\n           \"AUTHORITY\": \"lionkimbro@gmail.com\",\n           \"AUTHORITYDATE\": \"2021-08-27\"},\n  \"SOFT\": {\"DESCRIPTION\": \"\n  "
+         },
+         "format": "Fat_Info",
+         "uid": "cb322bfe070411ec841060a44c24df47"
+      },
+      {
          "children": [
             "bed8095c045011ecb11960a44c24df47",
             "c0da87da045111eca66060a44c24df47"
@@ -1907,6 +1958,16 @@
       },
       {
          "children": [
+            "ebec69e7070111ecb4b660a44c24df47"
+         ],
+         "data": {
+            "Name": "Sketching a JSON Identifier Package"
+         },
+         "format": "DEFAULT",
+         "uid": "de7793aa070111ec993960a44c24df47"
+      },
+      {
+         "children": [
             "5f274c52043411ec80a360a44c24df47",
             "8c8637bf043411ec988860a44c24df47"
          ],
@@ -1942,7 +2003,8 @@
             "06c9b1e206f511ec89b760a44c24df47",
             "1e91402806f511ecb07d60a44c24df47",
             "2206dbf106f611ec9f6760a44c24df47",
-            "bdc7965f06f611ec9e0760a44c24df47"
+            "bdc7965f06f611ec9e0760a44c24df47",
+            "caee2cbb09c411ec9cf360a44c24df47"
          ],
          "data": {
             "Created": "2021-08-26 22:09:02.746667",
@@ -1975,6 +2037,19 @@
          "uid": "e5ee325703d511ec905060a44c24df47"
       },
       {
+         "children": [
+            "0de4aedc070411ec9b0460a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-26 23:42:23.767589",
+            "Hook": "stores the list of identifiers, and bundled data, in a multi-part container format",
+            "Name": "JSON Container Format",
+            "Notes": "\n[{ part #1 },\n { part #2 },\n  ...\n { part #N }]\n\n\nEach part works like so:\n\n{\"TITLE\": \"title of section -- human readable\",\n \"IDENTIFIER\": &lt;hard identifier&gt;,\n \"CONTENT\": ...}\n\nThe identifiers for my sections have the specific form:\n- {\"TYPE\": \"JSON-CONTAINER-SECTION-ID\",\n   \"VER\": \"1\",\n   \"SECTION\": \"IDENTIFIERS\",\n   \"AUTHOR\": \"lionkimbro@gmail.com\",\n   \"AUTHORDATE\": \"2021-08-26\"}\n\n(by RFC-4151, this might be: \"tag:lionkimbro@gmail.com,2021-08-26:json-container-section-id:v1:identifiers\")\n\nThe SECTIONs, which are what vary, are:\n\n- IDENTIFIERS -- for storing raw identifiers in, with HARD and SOFT data, and local short names as well\n\nThe CONTENT of this section is a list.\nEach item of the list contains identifier data."
+         },
+         "format": "Fat_Info",
+         "uid": "ebec69e7070111ecb4b660a44c24df47"
+      },
+      {
          "children": [],
          "data": {
             "Created": "2021-08-22 13:31:39.661287",
@@ -1987,7 +2062,8 @@
       },
       {
          "children": [
-            "fb852403044511ecae9260a44c24df47"
+            "fb852403044511ecae9260a44c24df47",
+            "de7793aa070111ec993960a44c24df47"
          ],
          "data": {
             "Name": "Sketching"
