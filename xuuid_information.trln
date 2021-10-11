@@ -918,7 +918,8 @@
       {
          "children": [
             "3e4ceb8205d811ec8d4860a44c24df47",
-            "da06dde105d911ecb29060a44c24df47"
+            "da06dde105d911ecb29060a44c24df47",
+            "e081f0cd09ec11ec854960a44c24df47"
          ],
          "data": {
             "Name": "Open Questions"
@@ -1119,6 +1120,17 @@
          },
          "format": "Fat_Question",
          "uid": "6063fa12043511ec840860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-30 17:28:38.251450",
+            "Hook": "is it really a problem?",
+            "Name": "Is Identification Enough?",
+            "Notes": "If the goal is simply to have a unique identifier, then you have no problem.\n\n\"Yes,\" it's a problem, if you have to make up schemes for generating large quantities of unique identifier's in a person's space.\n- it's all going to be sharded on the person's authority,\n- it's all going to be shareded on a timestamp,\n- ...so a collision seems less likely\n  (scenario I'm imagining: numbering entries in files automatically, sub-multiple assigned sub-second, and this is happening on multiple computers)\n\nHowever, while it's not perfect, it's very very good in the main, and useable in the short term.\n\nFurthermore, whatever goes on in the short term, it will be possible to uplift into the longer term.\n\nSo I think that Tag URIs, for the time being, are the best answer.\n\n\nSo for example:\n\n2021-08-30,lionkimbro@gmail.com:lsffile:programmingresearch  -- the file\n2021-08-30,lionkimbro@gmail.com:lsfentry:programmingresearch  -- the first (anonymous) entry in the file\n2021-08-30,lionkimbro@gmail.com:lsfentry:programmingresearch:013  -- entry #013\n2021-08-30,lionkimbro@gmail.com:lsfentry:programmingresearch:01G  -- entry #01G\n\nYou just have to be aware here that it is possible to collide here.\n* Two files both called \"programmingresearch\",\n* with entries number-assigned on the same day.\n\nThe weak point here is the name of the LSF file.\nOne solution is to always use the yyyy-mm-dd of the file itself.\nThat solves the problem for all cases save using the same name twice on the same day, which -- stupid you.\nYou can also solve that by using to-the-second timestamps.\n"
+         },
+         "format": "Fat_Info",
+         "uid": "62981d4609f211ec912560a44c24df47"
       },
       {
          "children": [
@@ -1364,6 +1376,7 @@
             "75d246a4037211ecb3b760a44c24df47",
             "74362dcd038411ecb67b60a44c24df47",
             "2b0b942903d511ecb6c560a44c24df47",
+            "c281cf0f09ed11ec8d8160a44c24df47",
             "4230cc4503d511ecb57960a44c24df47",
             "afd8846803d411ecb50060a44c24df47",
             "3967192103d511ecbb0160a44c24df47",
@@ -1484,7 +1497,8 @@
             "b209c23b03cf11eca8aa60a44c24df47",
             "da83944803d011ecb3ae60a44c24df47",
             "cd2172a603d311ec8aa260a44c24df47",
-            "19e751f203d111ecbd9160a44c24df47"
+            "19e751f203d111ecbd9160a44c24df47",
+            "f85c6ff709ed11eca07960a44c24df47"
          ],
          "data": {
             "Created": "2021-08-22 22:04:30.597383",
@@ -1503,6 +1517,17 @@
          },
          "format": "Inquiry_Con",
          "uid": "a069383205dd11ec81c860a44c24df47"
+      },
+      {
+         "children": [],
+         "data": {
+            "Created": "2021-08-30 17:01:49.529386",
+            "Hook": "example of an LSF file with an integrated key file",
+            "Name": "LSF w/ integrated Key File",
+            "Notes": "author: person:lionkimbro\n\n== XUUID Identifiers ==\ndate: 2021-08-30\naspect: keyfile\ntags: json\n\n[{\"HARD\": {...},\n  \"SOFT\": {...},\n  \"LOCAL\": {\"NAME\": \"person:lionkimbro\"},\n ...]\n\n"
+         },
+         "format": "Fat_Info",
+         "uid": "a3b89bad09ee11eca5db60a44c24df47"
       },
       {
          "children": [],
@@ -1720,6 +1745,17 @@
          "uid": "c0da87da045111eca66060a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Author": "Lion",
+            "Created": "2021-08-30 16:55:31.682894",
+            "Hook": "a file that associates shortnames with XUUID identifiers for a particular scope",
+            "Name": "key file"
+         },
+         "format": "Inquiry_Definition",
+         "uid": "c281cf0f09ed11ec8d8160a44c24df47"
+      },
+      {
          "children": [
             "ccf1dee5038a11ecb8c060a44c24df47",
             "d922a86a038a11ec9e1e60a44c24df47",
@@ -1750,6 +1786,7 @@
          "children": [
             "afd8846803d411ecb50060a44c24df47",
             "37a27774038611ec839f60a44c24df47",
+            "c281cf0f09ed11ec8d8160a44c24df47",
             "4e53716c03d511eca3f360a44c24df47"
          ],
          "data": {
@@ -1772,7 +1809,9 @@
          "uid": "caeabe8903ca11eca20b60a44c24df47"
       },
       {
-         "children": [],
+         "children": [
+            "62981d4609f211ec912560a44c24df47"
+         ],
          "data": {
             "Created": "2021-08-30 12:02:16.449939",
             "Hook": "you can't rigorously identiify types, and thus you can't rigorously decode the data",
@@ -1978,6 +2017,18 @@
          "uid": "dfe6c3dd044511ec8e1360a44c24df47"
       },
       {
+         "children": [],
+         "data": {
+            "Created": "2021-08-30 16:49:12.518676",
+            "Hook": "how do you work with file formats that can only accept strings?",
+            "Name": "strings-only data formats",
+            "Question": "Take for instance LSF: how do I put into the LSF file that it's author is ME, Lion Kimbro?\n",
+            "Research": "One thought --\nIs to use a \"key file\".\n\nThe key file associates the short strings with the full expansions required for their unique identification.\nThe key file is intended to be used with the file, wherever it appears.\n\nKey files may have a scope.\n\nI can imagine a read-only system-wide key file, or a system-wide live identifier database, that is perhaps append-only.\n  -- this introduces some particular complications:\n     if the system-wide key file is appended to,\n     and a name given conflicts with a name in a running program,\n     the running program needs to somehow detect this and hastily rename everything in its scope...\n\n  -- ...is that really a good idea?\n\nOr what if all identifiers run through a central system-wide process?\nThere are going to be lots of collisions, so the system-wide process of assigning \"local\" names is going to have to be pretty good..."
+         },
+         "format": "Fat_Question",
+         "uid": "e081f0cd09ec11ec854960a44c24df47"
+      },
+      {
          "children": [
             "1ae11983064311ecb41160a44c24df47",
             "b07b9da6064411ec9f1a60a44c24df47",
@@ -2081,6 +2132,19 @@
          },
          "format": "Inquiry_Con",
          "uid": "f80c89d206f411ecab8a60a44c24df47"
+      },
+      {
+         "children": [
+            "a3b89bad09ee11eca5db60a44c24df47"
+         ],
+         "data": {
+            "Created": "2021-08-30 16:57:02.034943",
+            "Hook": "most existing data formats will require key files as auxiliaries",
+            "Name": "Key Files are required",
+            "Notes": "Because most systems just have string identifiers (say,) and can't handle full XUUIDs, there's a need for files that say, \"this string represents that XUUID,\" and that's going to be hard to explain to people, I think.\n\nFor example, my LSF files cannot say, \"author: &lt;complex identifier for Lion Kimbro&gt;\"; they can only say something like: \"author: person:lionkimbro\".\nWell, how does \"person:lionkimbro\" get resolved to an identity?  And that requires a key file.\n(Either that, or the LSF file needs to have a block that is itself the key file.)"
+         },
+         "format": "Fat_Info",
+         "uid": "f85c6ff709ed11eca07960a44c24df47"
       },
       {
          "children": [],
